@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020917"/>
+      <stop offset="50%" stop-color="#061c40"/>
+      <stop offset="100%" stop-color="#030b1c"/>
+    </linearGradient>
+    <radialGradient id="glow6" cx="80%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#5483B3" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#020917" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg6)"/>
+  <rect width="1200" height="1500" fill="url(#glow6)"/>
+
+  <!-- Framing -->
+  <line x1="80" y1="80" x2="1120" y2="80" stroke="#5483B3" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="80" y1="260" x2="1120" y2="260" stroke="#5483B3" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="80" y1="1380" x2="1120" y2="1380" stroke="#5483B3" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="80" y1="80" x2="80" y2="1380" stroke="#5483B3" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="1120" y1="80" x2="1120" y2="1380" stroke="#5483B3" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Top Header with Official X Vector Logo -->
+  <g transform="translate(120, 140)">
+    <g transform="scale(3)">
+      <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" fill="#FFFFFF"/>
+    </g>
+    <text x="100" y="46" fill="#5483B3" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="600" letter-spacing="3">CCUHACKS // ORGANIZER THREAD</text>
+    <text x="960" y="46" text-anchor="end" fill="#C1E8FF" font-family="'Geist Mono', monospace" font-size="16">x.com/ccuhacks</text>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(120, 480)">
+    <text x="0" y="0" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="18" letter-spacing="5" font-weight="500">COMMUNITY INFRASTRUCTURE</text>
+    <text x="0" y="110" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="104" font-weight="800" letter-spacing="-3">The Hackathon</text>
+    <text x="0" y="215" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="104" font-weight="800" letter-spacing="-3">Playbook</text>
+    <text x="0" y="315" fill="#C1E8FF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="300" letter-spacing="-1">Scaling Realtime Portals for 1,000+ Engineers</text>
+  </g>
+
+  <!-- Metrics Schematic -->
+  <g transform="translate(120, 920)">
+    <rect x="0" y="0" width="960" height="280" rx="16" fill="#04142e" fill-opacity="0.8" stroke="#5483B3" stroke-opacity="0.3" stroke-width="1"/>
+    
+    <text x="40" y="50" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="14" letter-spacing="2">06 // DISTRIBUTED EVENT SYSTEMS</text>
+    <text x="40" y="90" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="500">Live Judging Telemetry &amp; Team Matchmaking Architecture</text>
+    <line x1="40" y1="120" x2="920" y2="120" stroke="#5483B3" stroke-opacity="0.15" stroke-width="1"/>
+
+    <g transform="translate(40, 160)">
+      <text x="0" y="0" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="13">EVENT SCALE</text>
+      <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">1,000+ Hackers</text>
+      <text x="0" y="60" fill="#C1E8FF" font-family="'Geist Mono', monospace" font-size="14" opacity="0.8">April 2026 Edition</text>
+    </g>
+
+    <g transform="translate(360, 160)">
+      <text x="0" y="0" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="13">ROLE</text>
+      <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Executive Org</text>
+      <text x="0" y="60" fill="#C1E8FF" font-family="'Geist Mono', monospace" font-size="14" opacity="0.8">Platform &amp; Logistics</text>
+    </g>
+
+    <g transform="translate(680, 160)">
+      <text x="0" y="0" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="13">TELEMETRY</text>
+      <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Zero Downtime</text>
+      <text x="0" y="60" fill="#C1E8FF" font-family="'Geist Mono', monospace" font-size="14" opacity="0.8">Edge-Deployed Next.js</text>
+    </g>
+  </g>
+
+  <!-- Bottom Colophon -->
+  <g transform="translate(120, 1340)">
+    <text x="0" y="0" fill="#C1E8FF" font-family="'Geist Mono', monospace" font-size="15" letter-spacing="1">HITEN PANDA // CCUHACKS EXECUTIVE</text>
+    <text x="960" y="0" text-anchor="end" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="15" letter-spacing="1">POSTED ON X // THREAD #41</text>
+  </g>
+</svg>

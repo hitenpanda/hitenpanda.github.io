@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#021528"/>
+      <stop offset="50%" stop-color="#062b4f"/>
+      <stop offset="100%" stop-color="#021024"/>
+    </linearGradient>
+    <radialGradient id="glow5" cx="60%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#C1E8FF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#021528" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg5)"/>
+  <rect width="1200" height="1500" fill="url(#glow5)"/>
+
+  <!-- Framing -->
+  <line x1="80" y1="80" x2="1120" y2="80" stroke="#C1E8FF" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="80" y1="260" x2="1120" y2="260" stroke="#C1E8FF" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="80" y1="1380" x2="1120" y2="1380" stroke="#C1E8FF" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="80" y1="80" x2="80" y2="1380" stroke="#C1E8FF" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="1120" y1="80" x2="1120" y2="1380" stroke="#C1E8FF" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Top Header with Official Substack Vector Logo -->
+  <g transform="translate(120, 140)">
+    <g transform="scale(3)">
+      <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" fill="#FF6719"/>
+    </g>
+    <text x="100" y="46" fill="#C1E8FF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="600" letter-spacing="3">THE SEQUENCE // IMPACTED SPECIAL</text>
+    <text x="960" y="46" text-anchor="end" fill="#FFFFFF" font-family="'Geist Mono', monospace" font-size="16">thesequence.substack.com</text>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(120, 480)">
+    <text x="0" y="0" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="18" letter-spacing="5" font-weight="500">ADAPTIVE PEDAGOGY</text>
+    <text x="0" y="110" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="104" font-weight="800" letter-spacing="-3">Adaptive AI</text>
+    <text x="0" y="215" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="104" font-weight="800" letter-spacing="-3">Education</text>
+    <text x="0" y="315" fill="#C1E8FF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="300" letter-spacing="-1">Scaling Socratic Dialogue to Underserved Communities</text>
+  </g>
+
+  <!-- Impact Metrics Schematic -->
+  <g transform="translate(120, 920)">
+    <rect x="0" y="0" width="960" height="280" rx="16" fill="#031a33" fill-opacity="0.8" stroke="#5483B3" stroke-opacity="0.3" stroke-width="1"/>
+    
+    <text x="40" y="50" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="14" letter-spacing="2">05 // COMMUNITY REASONING ENGINE</text>
+    <text x="40" y="90" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="500">Deconstructing Advanced Concepts into Interactive Explorations</text>
+    <line x1="40" y1="120" x2="920" y2="120" stroke="#5483B3" stroke-opacity="0.15" stroke-width="1"/>
+
+    <g transform="translate(40, 160)">
+      <text x="0" y="0" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="13">ORGANIZATION</text>
+      <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">impactEd</text>
+      <text x="0" y="60" fill="#C1E8FF" font-family="'Geist Mono', monospace" font-size="14" opacity="0.8">Co-Founder</text>
+    </g>
+
+    <g transform="translate(360, 160)">
+      <text x="0" y="0" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="13">METHODOLOGY</text>
+      <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Socratic Flow</text>
+      <text x="0" y="60" fill="#C1E8FF" font-family="'Geist Mono', monospace" font-size="14" opacity="0.8">Dynamic Diagnostic Trees</text>
+    </g>
+
+    <g transform="translate(680, 160)">
+      <text x="0" y="0" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="13">STUDENT REACH</text>
+      <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Open Access</text>
+      <text x="0" y="60" fill="#C1E8FF" font-family="'Geist Mono', monospace" font-size="14" opacity="0.8">Equitable Tech Literacy</text>
+    </g>
+  </g>
+
+  <!-- Bottom Colophon -->
+  <g transform="translate(120, 1340)">
+    <text x="0" y="0" fill="#C1E8FF" font-family="'Geist Mono', monospace" font-size="15" letter-spacing="1">HITEN PANDA // IMPACTED INITIATIVE</text>
+    <text x="960" y="0" text-anchor="end" fill="#5483B3" font-family="'Geist Mono', monospace" font-size="15" letter-spacing="1">FEATURED ON SUBSTACK</text>
+  </g>
+</svg>

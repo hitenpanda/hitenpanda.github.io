@@ -1,0 +1,407 @@
+{
+  "url": "https://melon.studio/",
+  "title": "melon studio",
+  "description": "Piotr Brzeziński, UX/UI and product designer in Poznań, Poland. Websites, web and mobile apps, SaaS products and design systems for companies and agencies.",
+  "scrapedAt": "2026-11-20T06:02:33.279Z",
+  "colors": {
+    "bg": "#ffffff",
+    "bgSecondary": "",
+    "text": "#000000",
+    "textSecondary": "#666666",
+    "primary": "#888888",
+    "secondary": "#aaaaaa",
+    "border": "#e5e5e5",
+    "palette": []
+  },
+  "typography": {
+    "headingFont": {
+      "family": "early-sans-variable, ui-sans-serif, system-ui, sans-serif",
+      "cleanFamily": "early-sans-variable",
+      "weights": [
+        "700"
+      ],
+      "usedFor": "heading",
+      "fallback": "sans-serif"
+    },
+    "bodyFont": {
+      "family": "early-sans-variable, ui-sans-serif, system-ui, sans-serif",
+      "cleanFamily": "early-sans-variable",
+      "weights": [
+        "400"
+      ],
+      "usedFor": "body",
+      "fallback": "sans-serif"
+    },
+    "fontSizes": [
+      176,
+      170.52,
+      117.6,
+      108.78,
+      75.705,
+      52.92,
+      44.1,
+      36,
+      33.81,
+      32.34
+    ],
+    "lineHeights": [],
+    "details": [
+      {
+        "role": "H1",
+        "size": 36,
+        "weight": "700",
+        "lineHeight": "52.2px",
+        "letterSpacing": "normal",
+        "font": "early-sans-variable"
+      },
+      {
+        "role": "H2",
+        "size": 176,
+        "weight": "300",
+        "lineHeight": "151.36px",
+        "letterSpacing": "-8.8px",
+        "font": "early-sans-variable"
+      },
+      {
+        "role": "H3",
+        "size": 18,
+        "weight": "400",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.18px",
+        "font": "early-sans-variable"
+      },
+      {
+        "role": "Body",
+        "size": 33.81,
+        "weight": "300",
+        "lineHeight": "36.5148px",
+        "letterSpacing": "-0.84525px",
+        "font": "early-sans-variable"
+      }
+    ]
+  },
+  "spacing": {
+    "base": 20,
+    "common": [
+      {
+        "value": 20,
+        "count": 32,
+        "role": "element"
+      },
+      {
+        "value": 5.85,
+        "count": 10,
+        "role": "element"
+      },
+      {
+        "value": 26,
+        "count": 5,
+        "role": "card"
+      },
+      {
+        "value": 31,
+        "count": 5,
+        "role": "card"
+      },
+      {
+        "value": 8,
+        "count": 4,
+        "role": "element"
+      },
+      {
+        "value": 12.6,
+        "count": 4,
+        "role": "element"
+      },
+      {
+        "value": 137.88,
+        "count": 4,
+        "role": "section"
+      },
+      {
+        "value": 1,
+        "count": 2,
+        "role": "element"
+      }
+    ]
+  },
+  "borderRadius": [
+    {
+      "value": 6,
+      "count": 7,
+      "role": "button"
+    },
+    {
+      "value": 50,
+      "count": 5,
+      "role": "card"
+    },
+    {
+      "value": 2,
+      "count": 1,
+      "role": "subtle"
+    },
+    {
+      "value": 3,
+      "count": 1,
+      "role": "subtle"
+    }
+  ],
+  "shadows": [
+    {
+      "value": "lab(0 0 0 / 0.75) 0px 16px 30px -16px, oklch(0.999998 0.0000253939 none / 0.06) 0px 0px 0px 1px inset",
+      "count": 2,
+      "level": "deep"
+    },
+    {
+      "value": "oklch(0.999998 0.0000253939 none / 0.22) 0px 0px 0px 3px",
+      "count": 1,
+      "level": "low"
+    },
+    {
+      "value": "oklch(0.628011 0.257679 29.2347 / 0.2) 0px 0px 0px 4px",
+      "count": 1,
+      "level": "low"
+    },
+    {
+      "value": "lab(0 0 0 / 0.6) 0px 18px 44px -22px",
+      "count": 1,
+      "level": "deep"
+    }
+  ],
+  "components": {
+    "primaryButton": null,
+    "buttons": [
+      {
+        "bg": "transparent",
+        "border": "1px solid oklch(0.999998 0.0000253939 none / 0.3)",
+        "borderRadius": 50,
+        "color": "",
+        "fontSize": 18,
+        "fontWeight": "400",
+        "paddingH": 6,
+        "paddingV": 1,
+        "variant": "outline"
+      },
+      {
+        "bg": "transparent",
+        "border": "1px solid lab(100 0 0)",
+        "borderRadius": 999,
+        "color": "",
+        "fontSize": 14,
+        "fontWeight": "450",
+        "paddingH": 18,
+        "paddingV": 0,
+        "variant": "pill"
+      },
+      {
+        "bg": "transparent",
+        "border": "1px solid lab(100 0 0)",
+        "borderRadius": 999,
+        "color": "",
+        "fontSize": 14,
+        "fontWeight": "450",
+        "paddingH": 18,
+        "paddingV": 0,
+        "variant": "pill"
+      }
+    ],
+    "card": {
+      "bg": "#000000",
+      "borderRadius": 6,
+      "padding": 0,
+      "shadow": "none"
+    }
+  },
+  "fontFaces": [
+    {
+      "family": "Geist Mono",
+      "src": "https://melon.studio/_next/static/immutable/media/5ce348bf30bf5439-s.27spqqad3wyeo.woff2",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Geist Mono",
+      "src": "https://melon.studio/_next/static/immutable/media/4fa387ec64143e14-s.3f4zuumv8svu0.woff2",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Geist Mono",
+      "src": "https://melon.studio/_next/static/immutable/media/6306c77e7c8268e4-s.34r5yzckw0h2s.woff2",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Geist Mono",
+      "src": "https://melon.studio/_next/static/immutable/media/7d817b4c03b0c5f1-s.2jyz_zw3a8jit.woff2",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Geist Mono",
+      "src": "https://melon.studio/_next/static/immutable/media/bbc41e54d2fcbd21-s.30bdpjkrtcces.woff2",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Geist Mono",
+      "src": "https://melon.studio/_next/static/immutable/media/797e433ab948586e-s.p.1v5bejj26fx9h.woff2",
+      "style": "normal",
+      "weight": "400"
+    }
+  ],
+  "cssCustomProperties": [
+    {
+      "name": "--black",
+      "value": "#0f0000",
+      "category": "color"
+    },
+    {
+      "name": "--white",
+      "value": "#f6efed",
+      "category": "color"
+    },
+    {
+      "name": "--red",
+      "value": "red",
+      "category": "other"
+    },
+    {
+      "name": "--red-3",
+      "value": "#e5524a",
+      "category": "color"
+    },
+    {
+      "name": "--liquid-pink",
+      "value": "#ffb3b3",
+      "category": "color"
+    },
+    {
+      "name": "--ink",
+      "value": "#fff",
+      "category": "color"
+    },
+    {
+      "name": "--muted",
+      "value": "oklch(from var(--ink) l c h / .55)",
+      "category": "color"
+    },
+    {
+      "name": "--rule",
+      "value": "oklch(from var(--ink) l c h / .12)",
+      "category": "color"
+    },
+    {
+      "name": "--f-bg",
+      "value": "var(--black)",
+      "category": "other"
+    },
+    {
+      "name": "--f-fg",
+      "value": "var(--ink)",
+      "category": "other"
+    },
+    {
+      "name": "--f-fg2",
+      "value": "var(--muted)",
+      "category": "other"
+    },
+    {
+      "name": "--f-rule",
+      "value": "oklch(from var(--ink) l c h / .16)",
+      "category": "color"
+    },
+    {
+      "name": "--font",
+      "value": "\"early-sans-variable\", ui-sans-serif, system-ui, sans-serif",
+      "category": "typography"
+    },
+    {
+      "name": "--font-mono",
+      "value": "var(--font-geist-mono), ui-monospace, monospace",
+      "category": "typography"
+    },
+    {
+      "name": "--font-display",
+      "value": "\"lekick-regular\", \"early-sans-variable\", ui-sans-serif, sans-serif",
+      "category": "typography"
+    },
+    {
+      "name": "--f-mono",
+      "value": "500 13px/1.35 var(--font-mono)",
+      "category": "other"
+    },
+    {
+      "name": "--f-title-size",
+      "value": "clamp(3.25rem, 7.4vw, 8.75rem)",
+      "category": "other"
+    },
+    {
+      "name": "--gutter",
+      "value": "40px",
+      "category": "spacing"
+    },
+    {
+      "name": "--f-gap",
+      "value": "24px",
+      "category": "spacing"
+    },
+    {
+      "name": "--st-gap",
+      "value": "clamp(72px, 9.5vw, 144px)",
+      "category": "other"
+    },
+    {
+      "name": "--atf-hero",
+      "value": "max(83svh, calc(.8vh + 32.4vw + 64px))",
+      "category": "other"
+    },
+    {
+      "name": "--col-w",
+      "value": "min(52vw, 92svh)",
+      "category": "other"
+    },
+    {
+      "name": "--col-gap",
+      "value": "3.5rem",
+      "category": "spacing"
+    },
+    {
+      "name": "--cap-gap",
+      "value": "24px",
+      "category": "spacing"
+    },
+    {
+      "name": "--appear-ease",
+      "value": "cubic-bezier(.11, .06, .18, 1)",
+      "category": "other"
+    },
+    {
+      "name": "--ease-reveal",
+      "value": "cubic-bezier(.18, .66, .18, 1)",
+      "category": "other"
+    },
+    {
+      "name": "--ease-under",
+      "value": "cubic-bezier(.18, .83, .27, 1)",
+      "category": "other"
+    },
+    {
+      "name": "--f-inv",
+      "value": "0",
+      "category": "spacing"
+    }
+  ],
+  "tags": [
+    "light",
+    "rounded",
+    "monochrome",
+    "monospace",
+    "sans-serif"
+  ],
+  "mood": "Friendly, approachable design with rounded shapes and generous whitespace.",
+  "heroHeadline": "melon studio — UX/UI, web, app and SaaS design studio in Poznań, Poland",
+  "heroSubtitle": "",
+  "isJapanese": false
+}

@@ -1,0 +1,2273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="csrf-token" content="IwISLGdmGHMUGTxmDQo3IAAiCBgOFTxgtLcTPK-AWpH0wkOi0sfoHfw1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+
+    <title data-default="Fontdue" data-suffix=" - Fontdue">
+      The e-commerce platform for independent type foundries
+     - Fontdue</title>
+
+    <meta name="description" content="Try Fontdue free and build your own type foundry website. The best e-commerce platform for type designers and publishers.">
+    
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The e-commerce platform for independent type foundries - Fontdue">
+    <meta property="og:description" content="Try Fontdue free and build your own type foundry website. The best e-commerce platform for type designers and publishers.">
+    <meta property="og:image" content="https://www.fontdue.com/images/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.fontdue.com/images/og-default.png">
+    <link rel="alternate" type="application/rss+xml" title="Fontdue blog" href="/blog/rss.xml">
+
+    
+  
+  
+    <link phx-track-static rel="stylesheet" href="https://cdn.fontdue.com/js/dist/site_frontend-v563sXVV.css">
+  
+
+
+
+  <script phx-track-static type="module" src="https://cdn.fontdue.com/js/dist/site_frontend-D87jtmgc.js">
+  </script>
+
+
+
+  
+
+
+  <link phx-track-static rel="modulepreload" href="https://cdn.fontdue.com/js/dist/phoenix_live_view.esm-BLhOjW-M.js">
+
+
+
+
+  
+  
+    <link phx-track-static rel="stylesheet" href="https://cdn.fontdue.com/js/dist/live_view-BmmD1It0.css">
+  
+
+
+
+  <link phx-track-static rel="modulepreload" href="https://cdn.fontdue.com/js/dist/live_view-2Ytr4w2e.js">
+
+
+
+  
+
+
+  <link phx-track-static rel="modulepreload" href="https://cdn.fontdue.com/js/dist/preload-helper-Co7OfhXA.js">
+
+
+
+
+  
+
+
+  <link phx-track-static rel="modulepreload" href="https://cdn.fontdue.com/js/dist/phoenix_live_view.esm-BLhOjW-M.js">
+
+
+
+
+  
+
+
+  <link phx-track-static rel="modulepreload" href="https://cdn.fontdue.com/js/dist/_commonjsHelpers-Cpj98o6Y.js">
+
+
+
+
+
+  
+
+
+  <link phx-track-static rel="modulepreload" href="https://cdn.fontdue.com/js/dist/_commonjsHelpers-Cpj98o6Y.js">
+
+
+
+
+  
+
+
+  <link phx-track-static rel="modulepreload" href="https://cdn.fontdue.com/js/dist/preload-helper-Co7OfhXA.js">
+
+
+
+
+
+
+      <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.fontdue.com/british-standard-type/fonts/0390b7f5cab58b1169b990378c8b86df10e864c2.woff2">
+
+  </head>
+
+  <body class="font-sans text-base bg-[#FAF7F3] text-black">
+    <div id="phx-GOn_9OkYsCfaUh2D" data-phx-main data-phx-session="SFMyNTY.g2gDaAJhBnQAAAAIdwJpZG0AAAAUcGh4LUdPbl85T2tZc0NmYVVoMkR3B3Nlc3Npb250AAAAB20AAAATY29tcGxldGVkX29yZGVyX2lkc3cDbmlsbQAAABFjdXJyZW50X3RlbmFudF9pZHcDbmlsbQAAAA5saXZlX3RlbmFudF9pZHcDbmlsbQAAAAhvcmRlcl9pZHcDbmlsbQAAAAlyZW1vdGVfaXBtAAAADTQ3LjI0Ny4xMTguMzBtAAAADHNpZ251cF9vZmZlcncDbmlsbQAAAAR1c2VydwNuaWx3BHZpZXd3JEVsaXhpci5Gb250YWdlV2ViLk1hcmtldGluZy5QYWdlTGl2ZXcKcGFyZW50X3BpZHcDbmlsdwZyb3V0ZXJ3GEVsaXhpci5Gb250YWdlV2ViLlJvdXRlcncIcm9vdF9waWR3A25pbHcJcm9vdF92aWV3dyRFbGl4aXIuRm9udGFnZVdlYi5NYXJrZXRpbmcuUGFnZUxpdmV3EWxpdmVfc2Vzc2lvbl9uYW1ldwltYXJrZXRpbmduBgDprxT9oQFiAAFRgA.xVDdm-s0AEk6BZd4cBPFBNB-n1m_BvgZQhkwGwe6F28" data-phx-static="SFMyNTY.g2gDaAJhBnQAAAADdwJpZG0AAAAUcGh4LUdPbl85T2tZc0NmYVVoMkR3BWZsYXNodAAAAAB3CmFzc2lnbl9uZXdqbgYA6a8U_aEBYgABUYA.SCPCKNxzq0mAqZShqdsp51ZNJ028lzbDL0Ow-TOzWaY"><div class="min-h-screen flex flex-col overflow-x-clip bg-[#FAF7F3]">
+  <header id="site-header" data-transparent="true" phx-mounted="[[&quot;ignore_attrs&quot;,{&quot;attrs&quot;:[&quot;data-transparent&quot;]}]]" class="fixed inset-x-0 top-0 z-50 px-[1lh] bg-inherit transition-colors duration-200 data-[transparent=true]:bg-lime">
+  <div class="relative flex items-center h-14 text-sm">
+    <a href="https://www.fontdue.com/" class="font-medium text-black">Fontdue</a>
+
+    <nav class="hidden lg:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
+      <a href="https://www.fontdue.com/showcase" class="text-black hover:opacity-60 transition-opacity">
+        Showcase
+      </a><a href="https://www.fontdue.com/services" class="text-black hover:opacity-60 transition-opacity">
+        Services
+      </a><a href="https://www.fontdue.com/about" class="text-black hover:opacity-60 transition-opacity">
+        About
+      </a><a href="https://www.fontdue.com/blog" class="text-black hover:opacity-60 transition-opacity">
+        Blog
+      </a><a href="https://www.fontdue.com/docs" class="text-black hover:opacity-60 transition-opacity">
+        Docs
+      </a>
+    </nav>
+
+    <div class="flex-1"></div>
+
+    
+
+    <div class="hidden lg:flex items-center gap-5 ml-6">
+      
+        <a href="https://www.fontdue.com/login" class="text-black hover:opacity-60 transition-opacity">
+          Log in
+        </a>
+        <a href="https://www.fontdue.com/sign-up" class="!text-black font-medium hover:opacity-60 transition-opacity">
+          Try now →
+        </a>
+      
+    </div>
+
+    <button type="button" class="lg:hidden p-2 -mr-2 text-black hover:opacity-60" phx-click="[[&quot;show&quot;,{&quot;display&quot;:&quot;flex&quot;,&quot;to&quot;:&quot;#mobile-nav-panel&quot;}],[&quot;add_class&quot;,{&quot;names&quot;:[&quot;overflow-hidden&quot;],&quot;to&quot;:&quot;body&quot;}]]" aria-label="Open menu">
+      <span class="hero-bars-3 size-5"></span>
+    </button>
+  </div>
+</header>
+
+
+<div id="mobile-nav-panel" class="hidden fixed inset-0 z-50 bg-[#FAF7F3] lg:!hidden flex-col">
+  <div class="flex items-center h-14 px-[1lh] shrink-0">
+    <a href="https://www.fontdue.com/" class="font-medium text-black">Fontdue</a>
+    <div class="flex-1"></div>
+    <button type="button" class="p-2 -mr-2 text-black hover:opacity-60" phx-click="[[&quot;hide&quot;,{&quot;to&quot;:&quot;#mobile-nav-panel&quot;}],[&quot;remove_class&quot;,{&quot;names&quot;:[&quot;overflow-hidden&quot;],&quot;to&quot;:&quot;body&quot;}]]" aria-label="Close menu">
+      <span class="hero-x-mark size-5"></span>
+    </button>
+  </div>
+  <div class="flex-1 overflow-y-auto overscroll-contain">
+    
+      <nav class="px-[1lh] pb-12">
+  <ul class="flex flex-col gap-1">
+    <li>
+      <a href="https://www.fontdue.com/showcase" class="block py-1 text-[clamp(30px,9vw,40px)] leading-[1.15] tracking-[-0.01em] text-black hover:opacity-60 transition-opacity">
+        Showcase
+      </a>
+    </li><li>
+      <a href="https://www.fontdue.com/services" class="block py-1 text-[clamp(30px,9vw,40px)] leading-[1.15] tracking-[-0.01em] text-black hover:opacity-60 transition-opacity">
+        Services
+      </a>
+    </li><li>
+      <a href="https://www.fontdue.com/about" class="block py-1 text-[clamp(30px,9vw,40px)] leading-[1.15] tracking-[-0.01em] text-black hover:opacity-60 transition-opacity">
+        About
+      </a>
+    </li><li>
+      <a href="https://www.fontdue.com/blog" class="block py-1 text-[clamp(30px,9vw,40px)] leading-[1.15] tracking-[-0.01em] text-black hover:opacity-60 transition-opacity">
+        Blog
+      </a>
+    </li><li>
+      <a href="https://www.fontdue.com/docs" class="block py-1 text-[clamp(30px,9vw,40px)] leading-[1.15] tracking-[-0.01em] text-black hover:opacity-60 transition-opacity">
+        Docs
+      </a>
+    </li>
+  </ul>
+
+  <div class="mt-10 flex flex-col items-start gap-3">
+    
+      <a href="https://www.fontdue.com/login" class="!text-black inline-flex items-center px-6 py-3 text-lg shadow-[inset_0_0_0_1px_rgba(0,0,0,0.8)] hover:opacity-85 transition-opacity">
+        Log in
+      </a>
+      <a href="https://www.fontdue.com/sign-up" class="!text-black inline-flex items-center px-6 py-3 text-lg bg-lime hover:opacity-85 transition-opacity">
+        Start free trial
+      </a>
+    
+  </div>
+</nav>
+    
+  </div>
+</div>
+
+  
+  
+
+  
+  
+  
+
+  <main class="flex-1 w-full max-w-site mx-auto pt-14">
+    <div id="splash-static" phx-update="ignore">
+  <section id="home-hero" class="-mt-14 mx-[calc(50%-50vw)] relative bg-lime flex items-center justify-center px-6 py-32 min-h-screen">
+    <div class="w-full max-w-[min(2000px,82vw)] flex flex-col items-center text-center">
+      <h1 id="hero-headline" phx-update="ignore" style="font-family: &#39;wf-0bbb5478a388&#39;, &#39;Tomka&#39;, serif; font-weight: 400; font-style: normal;" class="font-['Tomka'] text-black text-[clamp(40px,8vw,84px)] leading-none m-0 relative text-center w-max max-w-full text-balance">
+        <span data-typewriter data-lines="[&quot;The e-commerce platform for&quot;,&quot;independent type foundries.&quot;]" data-narrow-lines="[&quot;The e-commerce&quot;,&quot;platform for&quot;,&quot;independent&quot;,&quot;type foundries.&quot;]" aria-label="The e-commerce platform for independent type foundries.">
+          <span class="block whitespace-nowrap">
+            <span class="relative inline-block">
+              <span aria-hidden="true" class="invisible">The e-commerce platform for</span>
+              <span class="absolute inset-0 text-left whitespace-nowrap" data-line-slot="0"><span data-line-out="0"></span><span class="hero-cursor" data-cursor aria-hidden="true"></span></span>
+            </span>
+          </span><span class="block whitespace-nowrap">
+            <span class="relative inline-block">
+              <span aria-hidden="true" class="invisible">independent type foundries.</span>
+              <span class="absolute inset-0 text-left whitespace-nowrap" data-line-slot="1"><span data-line-out="1"></span></span>
+            </span>
+          </span>
+        </span>
+      </h1>
+      <div class="mt-12 flex flex-wrap items-center justify-center gap-2">
+        
+          <a href="/sign-up" class="inline-flex items-center justify-center bg-black px-3 py-1.5 text-[14px] leading-[1.4] text-lime hover:opacity-70 transition-opacity">
+            Start free trial
+          </a>
+          <a href="/login" class="!text-black inline-flex items-center justify-center bg-[#E0DEDC] px-3 py-1.5 text-[14px] leading-[1.4] hover:opacity-70 transition-opacity">
+            Log in
+          </a>
+        
+      </div>
+    </div>
+    
+    <div data-hero-font-credit data-font-id="wf-0bbb5478a388" class="absolute bottom-0 inset-x-0 px-[1lh] pb-[1lh] text-center invisible opacity-0 transition-opacity duration-300">
+      <div class="text-xs font-mono uppercase tracking-[0.04em] text-black/55">
+        Symbol Mono Medium
+        
+            by
+            <a href="https://www.britishstandardtype.xyz" target="_blank" rel="noopener" class="text-black/55! hover:text-black/80">British Standard Type</a>
+          
+      </div>
+    </div>
+    <a id="hero-sticker" href="/blog" aria-label="Visit our new blog" phx-hook="StickerSpin" class="absolute right-[1lh] bottom-[3lh] sm:bottom-[1lh] block w-[clamp(118px,12.9vw,184px)] -rotate-[8deg] text-black! no-underline">
+  <svg viewBox="8 8 184 184" class="block w-full h-auto overflow-visible" aria-hidden="true">
+    <defs>
+      <path id="hero-sticker-ring" d="M100,159 A59,59 0 1,1 100,41 A59,59 0 1,1 100,159"></path>
+    </defs>
+    <circle cx="100" cy="100" r="91" fill="#F4B8EE" stroke="currentColor" stroke-width="1.25"></circle>
+    
+    <g data-sticker-ring class="origin-[100px_100px] motion-safe:animate-[spin_24s_linear_infinite]">
+      <text font-family="Tonka Mono" font-size="30" letter-spacing="1.5" fill="currentColor">
+        <textPath href="#hero-sticker-ring" startOffset="50%" text-anchor="middle">VISIT OUR NEW BLOG</textPath>
+      </text>
+    </g>
+    
+    <path transform="translate(100 100) scale(0.19) translate(-250 -265)" fill="currentColor" d="M167.8,163.8c-14,0-25.3,11.3-25.3,25.3h-12.6c0-21,17-37.9,37.9-37.9s38,17,38,37.9h-12.7 C193.1,175.1,181.7,163.8,167.8,163.8z M332.2,163.8c14,0,25.3,11.3,25.3,25.3h12.6c-0.1-21-17.2-37.9-38.1-37.8 c-20.8,0.1-37.6,16.9-37.8,37.8h12.6C306.9,175.1,318.3,163.8,332.2,163.8z M386.3,321.9c-1.4,6.5-3.6,12.9-6.4,19h40.9v12.6h-48.1 c-15.8,23.2-41.8,37.4-69.8,37.9c-0.7,0-1.4,0-2.2,0c-2.2,0-4.5-0.1-6.7-0.2c-13.8,24.3-44.7,32.7-69,18.9 c-8.9-5.1-16-12.7-20.5-21.9c-0.6,0-1.3,0-1.9,0c-0.7,0-1.4,0-2.1,0c-26.4-0.6-51.1-13.4-66.7-34.8H79.2v-12.6H126 c-3-6-5.3-12.4-6.9-19H79.2v-12.7h37.8c-1.3-15.2,1.5-30.4,8-44.2l4.8-10.2c-36.3-20.9-48.7-67.3-27.8-103.6s67.3-48.7,103.6-27.8 c21.5,12.4,35.6,34.6,37.7,59.4h13.2c3.5-41.8,40.1-72.8,81.9-69.3s72.8,40.1,69.3,81.9c-2,23.6-14.8,44.9-34.7,57.6l4.7,8.9 c7.7,14.5,11.3,31,10.1,47.4l0,0h32.7v12.6L386.3,321.9z M280.1,389.3c-11.2-2.5-21.9-7-31.5-13.3c-9.4,5.4-19.6,9.2-30.3,11l0,0 c11.5,17.5,34.9,22.4,52.5,11C274.3,395.6,277.5,392.7,280.1,389.3L280.1,389.3z M283.7,390c-0.1,0-0.1,0-0.2,0 C283.5,390,283.6,390,283.7,390L283.7,390z M286.9,390.5L286.9,390.5z M366.7,267.8l-40.1-75.7c-1.6-3.1-0.5-6.9,2.6-8.5 s6.9-0.5,8.5,2.6l29.4,55.6c29.1-19.3,37-58.6,17.6-87.7c-19.3-29.1-58.6-37-87.7-17.6c-17.6,11.7-28.2,31.5-28.2,52.7v6.3H231v-6.3 c0-34.9-28.3-63.3-63.2-63.3s-63.3,28.3-63.3,63.2c0,22.2,11.7,42.8,30.7,54.3l26.8-56.9c1.6-3.1,5.4-4.4,8.5-2.8 c3,1.5,4.3,5.1,3,8.2l-37,78.6c-10.7,22.6-9.2,49.2,4,70.5h52.6v12.6h-42.8c4.5,4.7,9.6,8.8,15.2,12.1c10.7,6.4,22.9,9.8,35.3,10 c0.6,0,1.2,0,1.8,0c11.2,0,22.3-2.4,32.5-7c-10.2-5.5-16.6-16.2-16.6-27.8h12.6c0.1,10.5,8.6,18.9,19.1,18.8 c10.4-0.1,18.8-8.5,18.8-18.8h12.7c0,12.5-7.3,23.8-18.7,28.9c11.6,6,24.5,9.1,37.6,9.1c0.6,0,1.3,0,1.9,0 c20.8-0.4,40.5-9.6,54.2-25.3h-49.7v-12.6h58.7C378.5,318.4,379,290.7,366.7,267.8L366.7,267.8z M193.1,284 c-17.5,0-31.6,14.2-31.6,31.6h12.6c0-10.5,8.5-19,19-19c10.5,0,19,8.5,19,19c0,0,0,0,0,0h12.6C224.7,298.1,210.5,284,193.1,284z M306.9,284c-17.5,0-31.6,14.2-31.6,31.6h12.6c0-10.5,8.5-19,19-19c10.5,0,19,8.5,19,19h12.6C338.5,298.1,324.4,284,306.9,284z"></path>
+  </svg>
+</a>
+  </section>
+  <style>
+  @keyframes hero-cursor-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+  .hero-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: currentColor;
+    vertical-align: text-bottom;
+    margin-left: 0.05em;
+    animation: hero-cursor-blink 0.9s step-end infinite;
+  }
+  [data-typewriter].typing .hero-cursor {
+    animation: none;
+    opacity: 1;
+  }
+  @font-face {
+  font-family: 'wf-0bbb5478a388';
+  src: url(https://fonts.fontdue.com/british-standard-type/fonts/0390b7f5cab58b1169b990378c8b86df10e864c2.woff2) format('woff2'), url(https://fonts.fontdue.com/british-standard-type/fonts/2a0e8f4519d6c19302458cefeb6246860b09c11f.woff) format('woff');
+  font-display: swap;
+}
+
+</style>
+<script>
+  // Header transparency: the marketing top-nav is transparent while the
+  // lime hero is still in view, then snaps to its filled state.
+  (function() {
+    var header = document.getElementById('site-header');
+    var hero = document.getElementById('home-hero');
+    if (!header || !hero) return;
+    var update = function() {
+      var b = hero.getBoundingClientRect().bottom;
+      header.dataset.transparent = b > 56 ? 'true' : 'false';
+    };
+    requestAnimationFrame(update);
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    window.addEventListener('load', update);
+  })();
+
+  // Hero font credit: name the picked font only once the browser has
+  // loaded it. When every source fails the headline falls back to Tomka,
+  // so the credit is removed rather than naming a font that isn't shown.
+  // The marquee can declare the same family again, so any one of the
+  // matching faces loading counts.
+  (function() {
+    var credit = document.querySelector('[data-hero-font-credit]');
+    if (!credit) return;
+    var id = credit.dataset.fontId;
+    var faces = [];
+    if (document.fonts && document.fonts.forEach) {
+      document.fonts.forEach(function(face) {
+        if (face.family.replace(/["']/g, '') === id) faces.push(face);
+      });
+    }
+    if (faces.length === 0) { credit.remove(); return; }
+    var pending = faces.length;
+    faces.forEach(function(face) {
+      face.load().then(function() {
+        credit.classList.remove('invisible', 'opacity-0');
+      }, function() {
+        pending--;
+        if (pending === 0) credit.remove();
+      });
+    });
+  })();
+
+  // Hero splash: pick line breakdown for the current viewport, rebuild
+  // slot DOM, autofit, then run the typewriter. Inline so the cursor is
+  // in place before the JS bundle loads. Pick-once — orientation/resize
+  // crossing the breakpoint won't re-pick mid-session.
+  (function() {
+    var tw = document.querySelector('[data-typewriter]');
+    if (!tw) return;
+    var narrowLines = JSON.parse(tw.dataset.narrowLines || '[]');
+    var lines = narrowLines.length && window.matchMedia('(max-width: 640px)').matches
+      ? narrowLines
+      : JSON.parse(tw.dataset.lines || '[]');
+    var h1 = tw.closest('h1');
+
+    // Always rebuild slots so one path handles both tiers; mirrors the
+    // server-rendered structure.
+    tw.innerHTML = lines.map(function(_, i) {
+      return '<span class="block whitespace-nowrap"><span class="relative inline-block">' +
+        '<span aria-hidden="true" class="invisible"></span>' +
+        '<span class="absolute inset-0 text-left whitespace-nowrap" data-line-slot="' + i + '">' +
+          '<span data-line-out="' + i + '"></span>' +
+          (i === 0 ? '<span class="hero-cursor" data-cursor aria-hidden="true"></span>' : '') +
+        '</span></span></span>';
+    }).join('');
+    tw.querySelectorAll('.invisible').forEach(function(el, i) {
+      el.textContent = lines[i];
+    });
+    var outs = tw.querySelectorAll('[data-line-out]');
+    var slots = tw.querySelectorAll('[data-line-slot]');
+    var cursor = tw.querySelector('[data-cursor]');
+
+    var fontReady = Promise.resolve();
+    if (h1 && lines.length > 0) {
+      var canvas = document.createElement('canvas');
+      var ctx = canvas.getContext('2d');
+      var REF = 100, MIN = 18;
+      var fontFamily = getComputedStyle(h1).fontFamily;
+      var fontSpec = '400 ' + REF + 'px ' + fontFamily;
+      // Pixel size that makes the widest line fill the column. `cap`
+      // clamps the result so a late webfont swap can only ever shrink the
+      // headline, never grow it past the box we've already reserved below.
+      var measure = function(cap) {
+        var parent = h1.parentElement;
+        if (!parent || parent.clientWidth <= 0) return 0;
+        ctx.font = fontSpec;
+        var widest = lines.reduce(function(m, l) {
+          return Math.max(m, ctx.measureText(l).width);
+        }, 0);
+        if (widest <= 0) return 0;
+        var px = Math.max(MIN, Math.floor(parent.clientWidth / (widest / REF)));
+        return cap ? Math.min(px, cap) : px;
+      };
+      // Freeze the headline's box once it's sized. Locking width + height
+      // means the late font swap (and its re-fit) only changes the glyphs
+      // inside the box, never the space the caption and buttons sit below
+      // — which is what drove the homepage's field CLS. The shrink-only
+      // re-fit lands before the typewriter starts (it shares fontReady),
+      // so it happens while just the cursor is visible.
+      var sized = 0;
+      var fit = function(cap, freeze) {
+        var px = measure(cap);
+        if (!px) return;
+        sized = px;
+        h1.style.fontSize = px + 'px';
+        if (freeze) {
+          h1.style.width = h1.offsetWidth + 'px';
+          h1.style.height = h1.offsetHeight + 'px';
+        }
+      };
+      // First pass runs before paint with whatever face is available (the
+      // picked webfont if already cached, otherwise the Tomka fallback).
+      fit(0, true);
+      if (document.fonts && document.fonts.load) {
+        // Re-fit once both the picked face and the Tomka fallback have
+        // settled. If the picked face fails the headline is set in Tomka,
+        // and the first pass may have measured before Tomka itself was
+        // ready – re-fitting only on the picked face's success left the
+        // headline overflowing the viewport.
+        var settle = function(spec) {
+          return document.fonts.load(spec).then(null, function() {});
+        };
+        fontReady = Promise.all([settle(fontSpec), settle('400 ' + REF + 'px Tomka')])
+          .then(function() { fit(sized, false); });
+      }
+      // A real viewport resize is user-initiated (excluded from CLS), so
+      // release the frozen box and recompute. Skip the synchronous callback
+      // ResizeObserver fires on first observe when we've already sized.
+      if (typeof ResizeObserver !== 'undefined' && h1.parentElement) {
+        var skipNext = sized > 0;
+        new ResizeObserver(function() {
+          if (skipNext) { skipNext = false; return; }
+          h1.style.width = '';
+          h1.style.height = '';
+          fit(0, true);
+        }).observe(h1.parentElement);
+      }
+    }
+
+    if (lines.length === 0 || !cursor) return;
+
+    var lineIdx = 0, ch = 0;
+    var step = function() {
+      var line = lines[lineIdx];
+      ch++;
+      outs[lineIdx].textContent = line.slice(0, ch);
+      var lineDone = ch === line.length;
+      if (lineDone) {
+        lineIdx++;
+        ch = 0;
+        if (lineIdx < lines.length) slots[lineIdx].appendChild(cursor);
+      }
+      if (lineIdx < lines.length) {
+        var delay = 12 + Math.random() * 22 + (lineDone ? 40 : 0);
+        setTimeout(step, delay);
+      } else {
+        tw.classList.remove('typing');
+        cursor.style.animation = 'hero-cursor-blink 0.9s step-end 2 forwards';
+      }
+    };
+    // Wait for the picked webfont AND a 600ms visual beat before
+    // starting; cap at 1500ms so a slow/missing font never blocks.
+    var minDelay = new Promise(function(r) { setTimeout(r, 600); });
+    var maxDelay = new Promise(function(r) { setTimeout(r, 1500); });
+    Promise.race([
+      Promise.all([fontReady, minDelay]),
+      maxDelay
+    ]).then(function() { tw.classList.add('typing'); step(); });
+  })();
+</script>
+
+</div>
+<section class="px-[1lh] pt-0 pb-16">
+  <div class="mt-16 mx-auto max-w-[920px] text-center text-[clamp(18px,2.4vw,28px)] leading-[1.35] text-balance [&_p]:m-0">
+    
+<p>Fontdue powers your foundry website behind the scenes, handling your font catalog, licensing, payments and everything after the sale. Start with our template, or build the site however you want and drop in Fontdue’s components. Customers buy directly from your domain, and the money goes into your Stripe account.</p>
+
+  </div>
+  <div class="mt-5 mx-auto max-w-[920px] text-center font-mono text-xs uppercase tracking-[0.06em] text-black/55">
+    
+<p>Trusted by 100+ foundries since 2018</p>
+
+  </div>
+</section>
+<section id="foundry-marquee" phx-update="ignore" aria-label="Foundries selling with Fontdue" class="foundry-marquee relative mx-[calc(50%-50vw)] -mt-4 mb-16 py-7 overflow-hidden" style="--marquee-duration: 115s;">
+  <div class="marquee-track flex w-max items-baseline">
+    <div class="flex w-max items-baseline">
+      <a href="https://celine-hurka.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-ae57bebbf4ba&#39;, &#39;Tomka&#39;, serif;">Céline Hurka</a><a href="https://www.hoodfonts.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-439790b03195&#39;, &#39;Tomka&#39;, serif;">HoodFonts</a><a href="https://www.generaltypestudio.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-5f12c61b5b23&#39;, &#39;Tomka&#39;, serif;">General Type Studio</a><a href="https://www.c-a-s-t.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-dd2c8bdfb280&#39;, &#39;Tomka&#39;, serif;">CAST Foundry</a><a href="https://haltypefaces.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-a2df4a6dbefe&#39;, &#39;Tomka&#39;, serif;">HAL Typefaces</a><a href="https://www.charlotterohde.de" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-9fb82ddc30d2&#39;, &#39;Tomka&#39;, serif;">Charlotte Rohde Typefaces</a><a href="https://ops-type.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-21dff6932b68&#39;, &#39;Tomka&#39;, serif;">OPS Type</a><a href="https://www.latinotype.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-9dc75fbde0aa&#39;, &#39;Tomka&#39;, serif;">Latinotype</a><a href="https://www.typeby.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-131677a95b0c&#39;, &#39;Tomka&#39;, serif;">TYPE BY</a><a href="https://fortfoundry.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-d007469d7a47&#39;, &#39;Tomka&#39;, serif;">Fort Foundry</a><a href="https://mass-driver.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-04b45d09d977&#39;, &#39;Tomka&#39;, serif;">Mass-Driver</a><a href="https://peregrinstudio.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-5f78e5052cb6&#39;, &#39;Tomka&#39;, serif;">Peregrin</a><a href="https://www.erkinkaramemet.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-f78c6045332d&#39;, &#39;Tomka&#39;, serif;">Erkin Karamemet</a><a href="https://www.renebieder.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-b8edb204547e&#39;, &#39;Tomka&#39;, serif;">Studio Rene Bieder</a><a href="https://www.laborandwait.xyz" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-912a611e4983&#39;, &#39;Tomka&#39;, serif;">Labor and Wait</a><a href="https://plain-form.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-e740bc317708&#39;, &#39;Tomka&#39;, serif;">Plain Form</a><a href="http://herzbergdesign.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-6998f42b3daf&#39;, &#39;Tomka&#39;, serif;">Herzberg Design Co</a><a href="https://letterror.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-a52565613c3e&#39;, &#39;Tomka&#39;, serif;">LettError</a><a href="https://jtdtype.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-0474a006c595&#39;, &#39;Tomka&#39;, serif;">JTD Type</a><a href="https://www.fonts.gr/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-1a15fd9fb850&#39;, &#39;Tomka&#39;, serif;">Fonts.Gr</a><a href="https://www.giuliaboggio.xyz" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-31a74fb2c641&#39;, &#39;Tomka&#39;, serif;">Giulia B</a><a href="https://monokrom.no/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-d0e103d92132&#39;, &#39;Tomka&#39;, serif;">Monokrom Skriftforlag AS</a><a href="https://www.verycoolstudio.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-006829bbd973&#39;, &#39;Tomka&#39;, serif;">Very Cool Studio</a>
+    </div><div class="flex w-max items-baseline" aria-hidden>
+      <a href="https://celine-hurka.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-ae57bebbf4ba&#39;, &#39;Tomka&#39;, serif;">Céline Hurka</a><a href="https://www.hoodfonts.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-439790b03195&#39;, &#39;Tomka&#39;, serif;">HoodFonts</a><a href="https://www.generaltypestudio.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-5f12c61b5b23&#39;, &#39;Tomka&#39;, serif;">General Type Studio</a><a href="https://www.c-a-s-t.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-dd2c8bdfb280&#39;, &#39;Tomka&#39;, serif;">CAST Foundry</a><a href="https://haltypefaces.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-a2df4a6dbefe&#39;, &#39;Tomka&#39;, serif;">HAL Typefaces</a><a href="https://www.charlotterohde.de" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-9fb82ddc30d2&#39;, &#39;Tomka&#39;, serif;">Charlotte Rohde Typefaces</a><a href="https://ops-type.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-21dff6932b68&#39;, &#39;Tomka&#39;, serif;">OPS Type</a><a href="https://www.latinotype.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-9dc75fbde0aa&#39;, &#39;Tomka&#39;, serif;">Latinotype</a><a href="https://www.typeby.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-131677a95b0c&#39;, &#39;Tomka&#39;, serif;">TYPE BY</a><a href="https://fortfoundry.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-d007469d7a47&#39;, &#39;Tomka&#39;, serif;">Fort Foundry</a><a href="https://mass-driver.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-04b45d09d977&#39;, &#39;Tomka&#39;, serif;">Mass-Driver</a><a href="https://peregrinstudio.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-5f78e5052cb6&#39;, &#39;Tomka&#39;, serif;">Peregrin</a><a href="https://www.erkinkaramemet.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-f78c6045332d&#39;, &#39;Tomka&#39;, serif;">Erkin Karamemet</a><a href="https://www.renebieder.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-b8edb204547e&#39;, &#39;Tomka&#39;, serif;">Studio Rene Bieder</a><a href="https://www.laborandwait.xyz" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-912a611e4983&#39;, &#39;Tomka&#39;, serif;">Labor and Wait</a><a href="https://plain-form.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-e740bc317708&#39;, &#39;Tomka&#39;, serif;">Plain Form</a><a href="http://herzbergdesign.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-6998f42b3daf&#39;, &#39;Tomka&#39;, serif;">Herzberg Design Co</a><a href="https://letterror.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-a52565613c3e&#39;, &#39;Tomka&#39;, serif;">LettError</a><a href="https://jtdtype.com/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-0474a006c595&#39;, &#39;Tomka&#39;, serif;">JTD Type</a><a href="https://www.fonts.gr/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-1a15fd9fb850&#39;, &#39;Tomka&#39;, serif;">Fonts.Gr</a><a href="https://www.giuliaboggio.xyz" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-31a74fb2c641&#39;, &#39;Tomka&#39;, serif;">Giulia B</a><a href="https://monokrom.no/" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-d0e103d92132&#39;, &#39;Tomka&#39;, serif;">Monokrom Skriftforlag AS</a><a href="https://www.verycoolstudio.com" target="_blank" rel="noopener" class="text-black hover:opacity-50 transition-opacity whitespace-nowrap text-[clamp(22px,2.8vw,38px)] leading-none mr-[1.7em]" style="font-family: &#39;wf-006829bbd973&#39;, &#39;Tomka&#39;, serif;">Very Cool Studio</a>
+    </div>
+  </div>
+  <style>
+  @font-face {
+  font-family: 'wf-ae57bebbf4ba';
+  src: url(https://fonts.fontdue.com/celine-hurka/fonts/5a5be76d39a4045c44fee2b39bbcd3605f413426.woff2) format('woff2'), url(https://fonts.fontdue.com/celine-hurka/fonts/18289f1eb12c7dc35d6b98868a8ec71d1f10d45b.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-439790b03195';
+  src: url(https://fonts.fontdue.com/hoodfonts/fonts/26b14cf29ebb527caaf494633c7edb51bbbe15bc.woff2) format('woff2'), url(https://fonts.fontdue.com/hoodfonts/fonts/26b14cf29ebb527caaf494633c7edb51bbbe15bc.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-5f12c61b5b23';
+  src: url(https://fonts.fontdue.com/generaltype/fonts/7b506631d78c64c022c84e5440d23fc71208da20.woff2) format('woff2'), url(https://fonts.fontdue.com/generaltype/fonts/7b506631d78c64c022c84e5440d23fc71208da20.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-dd2c8bdfb280';
+  src: url(https://fonts.fontdue.com/cast-foundry/fonts/84d19b1f36573a102ffd781ec0fb6bedddae7be2.woff2) format('woff2'), url(https://fonts.fontdue.com/cast-foundry/fonts/84d19b1f36573a102ffd781ec0fb6bedddae7be2.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-a2df4a6dbefe';
+  src: url(https://fonts.fontdue.com/hanli/fonts/b3233407d50042e34e3bfcf49d62fccca93584ca.woff2) format('woff2'), url(https://fonts.fontdue.com/hanli/fonts/1d8d688376e3a89d2acebd658023acd6b2658d43.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-9fb82ddc30d2';
+  src: url(https://fonts.fontdue.com/charlotte-rohde-typefaces/fonts/a728db06237ba59d80263cde95a73548e2246336.woff2) format('woff2'), url(https://fonts.fontdue.com/charlotte-rohde-typefaces/fonts/a728db06237ba59d80263cde95a73548e2246336.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-21dff6932b68';
+  src: url(https://fonts.fontdue.com/ops-type/fonts/8bd4ee949161116256dc0c0745576c992867cb23.woff2) format('woff2'), url(https://fonts.fontdue.com/ops-type/fonts/8bd4ee949161116256dc0c0745576c992867cb23.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-9dc75fbde0aa';
+  src: url(https://fonts.fontdue.com/latinotype/fonts/ed28479226fb311af50601bbd4e8f978e3806c2f.woff2) format('woff2'), url(https://fonts.fontdue.com/latinotype/fonts/ed28479226fb311af50601bbd4e8f978e3806c2f.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-131677a95b0c';
+  src: url(https://fonts.fontdue.com/typeby/fonts/d4553fce8e9861cf36a06000222e0dee61a60397.woff2) format('woff2'), url(https://fonts.fontdue.com/typeby/fonts/d4553fce8e9861cf36a06000222e0dee61a60397.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-d007469d7a47';
+  src: url(https://webfonts.fortfoundry.com/fonts/8efaac5003c9081f3f757626ea04f12727977bcf.woff2) format('woff2'), url(https://webfonts.fortfoundry.com/fonts/8efaac5003c9081f3f757626ea04f12727977bcf.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-04b45d09d977';
+  src: url(https://fonts.fontdue.com/mass-driver/fonts/e6143804d62aa3ae6356f918e39543d802bfdd71.woff2) format('woff2'), url(https://fonts.fontdue.com/mass-driver/fonts/e6143804d62aa3ae6356f918e39543d802bfdd71.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-5f78e5052cb6';
+  src: url(https://fonts.fontdue.com/peregrin/fonts/3d696dfed908ad2c54c2eebb7186ec430c80004a.woff2) format('woff2'), url(https://fonts.fontdue.com/peregrin/fonts/3d696dfed908ad2c54c2eebb7186ec430c80004a.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-f78c6045332d';
+  src: url(https://fonts.fontdue.com/erkin-karamemet-studio/fonts/ebcfe6b1d57730b84afc9cf41204654904f1197e.woff2) format('woff2'), url(https://fonts.fontdue.com/erkin-karamemet-studio/fonts/c6c11c68f94d037025c7b1ca72e89c2dd0551e8f.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-b8edb204547e';
+  src: url(https://fonts.fontdue.com/studio-rene-bieder/fonts/7b6085abaf14a5e2955f13caa70c11c72efcf8e8.woff2) format('woff2'), url(https://fonts.fontdue.com/studio-rene-bieder/fonts/7b6085abaf14a5e2955f13caa70c11c72efcf8e8.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-912a611e4983';
+  src: url(https://fonts.fontdue.com/laborandwait/fonts/13228d9fafa20338a962a80caa0f6ae13478c219.woff2) format('woff2'), url(https://fonts.fontdue.com/laborandwait/fonts/13228d9fafa20338a962a80caa0f6ae13478c219.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-e740bc317708';
+  src: url(https://fonts.fontdue.com/plain-form/fonts/ab4ec80b4168fa01a71c7c56f33b354f9e3ffb00.woff2) format('woff2'), url(https://fonts.fontdue.com/plain-form/fonts/ab4ec80b4168fa01a71c7c56f33b354f9e3ffb00.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-6998f42b3daf';
+  src: url(https://fonts.fontdue.com/herzberg/fonts/9a6d35e9506f61c2d453c3cc8d7815aa6de359e0.woff2) format('woff2'), url(https://fonts.fontdue.com/herzberg/fonts/9a6d35e9506f61c2d453c3cc8d7815aa6de359e0.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-a52565613c3e';
+  src: url(https://fonts.fontdue.com/letterror/fonts/dc2c771b6724d6a7e33eec70b53c0f3af308de20.woff2) format('woff2'), url(https://fonts.fontdue.com/letterror/fonts/dc2c771b6724d6a7e33eec70b53c0f3af308de20.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-0474a006c595';
+  src: url(https://fonts.fontdue.com/jtd-type/fonts/cf8e7156ec40a67b99ae31051e2f618b76ee8d95.woff2) format('woff2'), url(https://fonts.fontdue.com/jtd-type/fonts/cf8e7156ec40a67b99ae31051e2f618b76ee8d95.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-1a15fd9fb850';
+  src: url(https://fonts.fontdue.com/fonts-gr/fonts/fe2870cdf6292c3ea9b4fa58b761ad25968f02be.woff2) format('woff2'), url(https://fonts.fontdue.com/fonts-gr/fonts/fe2870cdf6292c3ea9b4fa58b761ad25968f02be.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-31a74fb2c641';
+  src: url(https://fonts.fontdue.com/giulia-b/fonts/aa707cdc0e989e97c52ac632800ed383644c6b64.woff2) format('woff2'), url(https://fonts.fontdue.com/giulia-b/fonts/aa707cdc0e989e97c52ac632800ed383644c6b64.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-d0e103d92132';
+  src: url(https://fonts.fontdue.com/monokrom/fonts/58fcd2f72377db379242b1d97d44277ed7935512.woff2) format('woff2'), url(https://fonts.fontdue.com/monokrom/fonts/58fcd2f72377db379242b1d97d44277ed7935512.woff) format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'wf-006829bbd973';
+  src: url(https://fonts.fontdue.com/very-cool-studio/fonts/cb81cad3f2b38a6a8128bf39d0e9d24dc05a6013.woff2) format('woff2'), url(https://fonts.fontdue.com/very-cool-studio/fonts/cb81cad3f2b38a6a8128bf39d0e9d24dc05a6013.woff) format('woff');
+  font-display: swap;
+}
+
+  @keyframes foundry-marquee-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  #foundry-marquee .marquee-track {
+    animation: foundry-marquee-scroll var(--marquee-duration, 90s) linear infinite;
+    will-change: transform;
+  }
+  #foundry-marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #foundry-marquee .marquee-track { animation: none; }
+  }
+</style>
+
+</section>
+<section class="px-[1lh] pb-24">
+  <div class="pt-3.5 font-mono text-xs uppercase tracking-[0.06em] tabular-nums text-black/55 border-t border-black/20">
+  How to sell your fonts on Fontdue
+</div>
+  <div class="m-0 mt-10 leading-[1.55] text-black/55 max-w-[640px] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&_p]:m-0">
+    
+<p>Your free trial covers everything you need to get selling – here’s how it goes.</p>
+
+  </div>
+  <div class="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+    <div class="md:col-span-5">
+      <div class="grid grid-flow-col auto-cols-fr gap-3 mb-8">
+        <button type="button" data-stories-step="0" data-stories-end="205" data-active="true" class="group w-full text-left cursor-pointer py-5 -my-3 min-[1720px]:py-0 min-[1720px]:my-0 transition-opacity data-[active=false]:min-[1720px]:opacity-40 min-[1720px]:hover:opacity-100!" aria-label="Step 1: Upload your fonts">
+          <div class="h-[3px] bg-black/15 overflow-hidden min-[1720px]:mb-3">
+            <div data-stories-bar="0" class="h-full bg-black" style="width: 0%"></div>
+          </div>
+          <div class="hidden min-[1720px]:block font-mono text-xs text-black/55 uppercase tracking-[0.04em] tabular-nums mb-1.5">
+            Step 1
+          </div>
+          <div class="hidden min-[1720px]:block text-[16px] leading-[1.2]">Upload your fonts</div>
+        </button><button type="button" data-stories-step="1" data-stories-end="359" data-stories-start="212" data-active="false" class="group w-full text-left cursor-pointer py-5 -my-3 min-[1720px]:py-0 min-[1720px]:my-0 transition-opacity data-[active=false]:min-[1720px]:opacity-40 min-[1720px]:hover:opacity-100!" aria-label="Step 2: Set up your licenses">
+          <div class="h-[3px] bg-black/15 overflow-hidden min-[1720px]:mb-3">
+            <div data-stories-bar="1" class="h-full bg-black" style="width: 0%"></div>
+          </div>
+          <div class="hidden min-[1720px]:block font-mono text-xs text-black/55 uppercase tracking-[0.04em] tabular-nums mb-1.5">
+            Step 2
+          </div>
+          <div class="hidden min-[1720px]:block text-[16px] leading-[1.2]">Set up your licenses</div>
+        </button><button type="button" data-stories-step="2" data-stories-end="715" data-active="false" class="group w-full text-left cursor-pointer py-5 -my-3 min-[1720px]:py-0 min-[1720px]:my-0 transition-opacity data-[active=false]:min-[1720px]:opacity-40 min-[1720px]:hover:opacity-100!" aria-label="Step 3: Sell your fonts">
+          <div class="h-[3px] bg-black/15 overflow-hidden min-[1720px]:mb-3">
+            <div data-stories-bar="2" class="h-full bg-black" style="width: 0%"></div>
+          </div>
+          <div class="hidden min-[1720px]:block font-mono text-xs text-black/55 uppercase tracking-[0.04em] tabular-nums mb-1.5">
+            Step 3
+          </div>
+          <div class="hidden min-[1720px]:block text-[16px] leading-[1.2]">Sell your fonts</div>
+        </button><button type="button" data-stories-step="3" data-stories-end="1019" data-stories-start="720" data-active="false" class="group w-full text-left cursor-pointer py-5 -my-3 min-[1720px]:py-0 min-[1720px]:my-0 transition-opacity data-[active=false]:min-[1720px]:opacity-40 min-[1720px]:hover:opacity-100!" aria-label="Step 4: Get paid">
+          <div class="h-[3px] bg-black/15 overflow-hidden min-[1720px]:mb-3">
+            <div data-stories-bar="3" class="h-full bg-black" style="width: 0%"></div>
+          </div>
+          <div class="hidden min-[1720px]:block font-mono text-xs text-black/55 uppercase tracking-[0.04em] tabular-nums mb-1.5">
+            Step 4
+          </div>
+          <div class="hidden min-[1720px]:block text-[16px] leading-[1.2]">Get paid</div>
+        </button>
+      </div>
+
+      <div class="relative min-h-[140px] min-[1720px]:min-h-[72px]">
+        <div data-stories-desc="0" class="">
+          <div class="min-[1720px]:hidden font-mono text-xs text-black/55 uppercase tracking-[0.04em] tabular-nums mb-1.5">
+            Step 1
+          </div>
+          <div class="min-[1720px]:hidden text-[18px] leading-[1.2] mb-2.5">Upload your fonts</div>
+          <div class="text-black/70 leading-[1.55] max-w-[420px] [&_p]:m-0">
+            
+<p>Drop in your font files. Fontdue organizes them into collections and generates webfonts automatically. Build type testers and specimen content for each family with our purpose-built CMS.</p>
+
+          </div>
+        </div><div data-stories-desc="1" class="hidden">
+          <div class="min-[1720px]:hidden font-mono text-xs text-black/55 uppercase tracking-[0.04em] tabular-nums mb-1.5">
+            Step 2
+          </div>
+          <div class="min-[1720px]:hidden text-[18px] leading-[1.2] mb-2.5">Set up your licenses</div>
+          <div class="text-black/70 leading-[1.55] max-w-[420px] [&_p]:m-0">
+            
+<p>Choose from our presets for desktop, web and app licenses, or build your own configurations with custom variables and options.</p>
+
+          </div>
+        </div><div data-stories-desc="2" class="hidden">
+          <div class="min-[1720px]:hidden font-mono text-xs text-black/55 uppercase tracking-[0.04em] tabular-nums mb-1.5">
+            Step 3
+          </div>
+          <div class="min-[1720px]:hidden text-[18px] leading-[1.2] mb-2.5">Sell your fonts</div>
+          <div class="text-black/70 leading-[1.55] max-w-[420px] [&_p]:m-0">
+            
+<p>Customers buy directly from your site with our drop-in store components. Every order lands in your Fontdue admin, tracked and fulfilled automatically.</p>
+
+          </div>
+        </div><div data-stories-desc="3" class="hidden">
+          <div class="min-[1720px]:hidden font-mono text-xs text-black/55 uppercase tracking-[0.04em] tabular-nums mb-1.5">
+            Step 4
+          </div>
+          <div class="min-[1720px]:hidden text-[18px] leading-[1.2] mb-2.5">Get paid</div>
+          <div class="text-black/70 leading-[1.55] max-w-[420px] [&_p]:m-0">
+            
+<p>Payments go straight to your own Stripe account. Watch your revenue grow in the dashboard while payouts arrive automatically.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        
+<a href="/docs/overview/first-steps" class="!text-black inline-block px-3.5 py-[7px] bg-lime hover:opacity-85 transition-opacity !no-underline">
+  Read the full tutorial
+</a>
+
+      </div>
+    </div>
+
+    <div class="md:col-span-7">
+      <button type="button" data-stories-advance class="group relative block w-full text-left cursor-pointer border border-black/15" aria-label="Continue">
+        <video id="how-it-works-video" muted playsinline preload="auto" poster="/images/how-it-works-poster.webp" data-stories-fps="30" class="block w-full h-auto">
+          <source src="/videos/how-it-works.mp4" type="video/mp4">
+        </video>
+        <span data-stories-overlay hidden class="absolute inset-0 flex items-center justify-center bg-black/60 transition-opacity">
+          <span class="inline-flex items-center justify-center bg-black px-4 py-2.5 text-[16px] leading-[1.4] text-lime group-hover:opacity-70 transition-opacity">
+            <span data-stories-overlay-label>Next →</span>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <script>
+  (function() {
+    var video = document.getElementById('how-it-works-video');
+    if (!video) return;
+    var bars = Array.prototype.slice.call(document.querySelectorAll('[data-stories-bar]'));
+    var steps = Array.prototype.slice.call(document.querySelectorAll('[data-stories-step]'));
+    var descs = Array.prototype.slice.call(document.querySelectorAll('[data-stories-desc]'));
+    var advanceBtn = document.querySelector('[data-stories-advance]');
+    var overlay = document.querySelector('[data-stories-overlay]');
+    var overlayLabel = document.querySelector('[data-stories-overlay-label]');
+    if (!bars.length || !descs.length) return;
+
+    // Chapter end times. Each step carries its last frame in
+    // data-stories-end; convert with fps. Steps without one fall back to
+    // an even split. The final chapter always ends at the true video end,
+    // so an end frame past the last frame simply clamps.
+    var count = bars.length;
+    var fps = parseFloat(video.dataset.storiesFps) || 30;
+    function computeBoundaries(d) {
+      var b = [];
+      for (var k = 0; k < count; k++) {
+        var el = steps[k];
+        var ef = el ? parseFloat(el.dataset.storiesEnd) : NaN;
+        if (!isNaN(ef) && fps > 0) b.push(Math.min(ef / fps, d));
+        else b.push(((k + 1) / count) * d);
+      }
+      if (count > 0) b[count - 1] = d;
+      return b;
+    }
+    var boundaries = computeBoundaries(15);
+    function recalcBoundaries() {
+      var d = video.duration;
+      if (!isFinite(d) || d <= 0) return;
+      boundaries = computeBoundaries(d);
+    }
+    video.addEventListener('loadedmetadata', recalcBoundaries);
+    if (!isNaN(video.duration) && video.duration > 0) recalcBoundaries();
+
+    var currentChapter = 0;
+    // Autoplay walks through every chapter and loops. Picking a step tab
+    // hands control to the visitor: from then on the video parks at each
+    // chapter end and the overlay's Next button advances it.
+    var autoplay = true;
+    // True while a chapter seek is in flight, so the boundary check in
+    // tick() doesn't fire on the stale currentTime (e.g. wrapping from
+    // the final chapter back to the first).
+    var seeking = false;
+
+    function chapterStart(i) {
+      var el = steps[i];
+      var sf = el ? parseFloat(el.dataset.storiesStart) : NaN;
+      if (!isNaN(sf) && fps > 0) {
+        var d = video.duration;
+        var t = sf / fps;
+        return (isFinite(d) && d > 0) ? Math.min(t, d) : t;
+      }
+      return i === 0 ? 0 : boundaries[i - 1];
+    }
+
+    function showChapter(i) {
+      descs.forEach(function(el, idx) {
+        el.classList.toggle('hidden', idx !== i);
+      });
+      steps.forEach(function(el, idx) {
+        el.dataset.active = idx === i ? 'true' : 'false';
+      });
+    }
+
+    // Overlay label depends on state: parked mid-chapter (e.g. autoplay was
+    // blocked) invites a tap to play the current chapter; parked at a
+    // boundary offers the next chapter, or a replay on the final one.
+    function overlayText() {
+      var atEnd = video.currentTime >= boundaries[currentChapter] - 0.05;
+      if (!atEnd) return 'Play ▶';
+      return currentChapter === boundaries.length - 1 ? 'Replay ↻' : 'Next →';
+    }
+
+    function setOverlay(visible) {
+      if (!overlay) return;
+      if (visible && overlayLabel) overlayLabel.textContent = overlayText();
+      overlay.hidden = !visible;
+    }
+
+    function tick() {
+      var t = video.currentTime;
+      var end = boundaries[currentChapter];
+
+      // At the end of the active chapter: roll on to the next one while
+      // autoplaying, otherwise park and wait for a click to advance.
+      if (t >= end && !seeking) {
+        if (autoplay) {
+          goTo(currentChapter + 1);
+        } else if (!video.paused) {
+          video.pause();
+          try { video.currentTime = end; } catch (e) {}
+        }
+      }
+
+      bars.forEach(function(bar, i) {
+        var prev = chapterStart(i);
+        var span = boundaries[i] - prev;
+        var p;
+        if (i < currentChapter) p = 1;
+        else if (i > currentChapter) p = 0;
+        else p = span > 0 ? Math.min(1, Math.max(0, (t - prev) / span)) : 0;
+        bar.style.width = (p * 100) + '%';
+      });
+
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+
+    function kickPlay() {
+      var p = video.play();
+      if (p && p.then) {
+        p.then(function() { setOverlay(false); })
+         .catch(function() { setOverlay(true); });
+      }
+    }
+
+    // iOS Safari freezes the decoder when play() is called while a seek is
+    // still in flight: the clock advances (so the progress bar grows) but no
+    // new frames paint. The video is muted, so autoplay policy lets us start
+    // playback from the 'seeked' callback - seek first, then play.
+    function seekAndPlay(t) {
+      if (Math.abs(video.currentTime - t) < 0.04) {
+        kickPlay();
+        return;
+      }
+      seeking = true;
+      var done = false;
+      function go() {
+        if (done) return;
+        done = true;
+        seeking = false;
+        video.removeEventListener('seeked', go);
+        kickPlay();
+      }
+      video.addEventListener('seeked', go);
+      // Safety net in case 'seeked' never arrives.
+      setTimeout(go, 800);
+      try { video.currentTime = t; } catch (e) { go(); }
+    }
+
+    function goTo(i) {
+      currentChapter = ((i % boundaries.length) + boundaries.length) % boundaries.length;
+      showChapter(currentChapter);
+      seekAndPlay(chapterStart(currentChapter));
+    }
+
+    function advance() {
+      // Clicking the video while it plays stops it and takes over from
+      // autoplay; the overlay then offers Play / Next / Replay.
+      if (!video.paused) {
+        autoplay = false;
+        video.pause();
+        return;
+      }
+      // Parked mid-chapter (autoplay was blocked, say) - resume the current
+      // chapter rather than skipping ahead. Only advance from a boundary.
+      var atEnd = video.currentTime >= boundaries[currentChapter] - 0.05;
+      if (!atEnd) {
+        kickPlay();
+        return;
+      }
+      goTo(currentChapter + 1);
+    }
+
+    if (advanceBtn) advanceBtn.addEventListener('click', advance);
+
+    steps.forEach(function(el) {
+      el.addEventListener('click', function() {
+        var i = parseInt(el.dataset.storiesStep, 10);
+        if (isNaN(i)) return;
+        autoplay = false;
+        goTo(i);
+      });
+    });
+
+    // While autoplaying, a pause is either a chapter hand-off (goTo seeks
+    // and resumes) or blocked autoplay; kickPlay() shows the overlay for
+    // the latter, so a plain pause event only matters once a visitor has
+    // taken over.
+    video.addEventListener('pause', function() { if (!autoplay) setOverlay(true); });
+    video.addEventListener('play', function() { setOverlay(false); });
+
+    showChapter(0);
+
+    // Start playback the first time the video scrolls into view.
+    var started = false;
+    function start() {
+      if (started) return;
+      started = true;
+      kickPlay();
+    }
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            start();
+            io.disconnect();
+          }
+        });
+      }, { threshold: 0.3 });
+      io.observe(video);
+    } else {
+      start();
+    }
+  })();
+</script>
+
+</section>
+<section class="px-[1lh] pb-20 scroll-mt-4">
+  <div class="pt-3.5 font-mono text-xs uppercase tracking-[0.06em] tabular-nums text-black/55 border-t border-black/20">
+  Features
+</div>
+  <div class="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+    <div class="md:col-span-5 text-sm [&_p]:m-0 [&_p:not(:first-child)]:mt-2.5 [&_p]:leading-[1.55] [&_p]:max-w-[420px] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>a:not(:first-child)]:mt-5">
+      
+<p>Fontdue provides a suite of features to help you start and run your foundry, including:</p>
+<p><strong>Handling fonts</strong> – process and organize your catalog, generate webfonts, and offer free test fonts.</p>
+<p><strong>Selling fonts</strong> – configure licenses, take payments and tax through Stripe, and manage orders, customers, and reports.</p>
+<p><strong>Presenting fonts online</strong> – author content, customize your storefront, and drop in components like type testers and the store.</p>
+<a href="/docs/overview/what-is-fontdue" class="!text-black inline-block px-3.5 py-[7px] bg-lime hover:opacity-85 transition-opacity !no-underline">
+  Explore the platform guide
+</a>
+
+    </div>
+    <div class="md:col-span-7 ">
+      
+<div id="admin-carousel" class="swiper relative overflow-hidden" phx-hook="Swiper" phx-update="ignore" data-swiper="{&quot;autoplay&quot;: false}">
+  
+  <div class="swiper-wrapper flex">
+    <div class="swiper-slide shrink-0 w-full mr-3">
+      <figure class="m-0">
+  <div class="rounded-[10px] overflow-hidden border bg-white border-[#d0d0d0]">
+  <div class="px-3 py-2 flex items-center gap-1.5 border-b border-[#d0d0d0]">
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="ml-3 font-mono text-[10px] uppercase tracking-[0.04em] truncate text-black">
+      Dashboard
+    </span>
+  </div>
+  
+    
+      
+      <img src="https://img.fontdue.com/cdn-cgi/image/width=1920,quality=80,format=auto/https://www.fontdue.com/images/admin/dashboard.png?v=6fdeb42b38" srcset="https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/admin/dashboard.png?v=6fdeb42b38 768w, https://img.fontdue.com/cdn-cgi/image/width=1280,quality=80,format=auto/https://www.fontdue.com/images/admin/dashboard.png?v=6fdeb42b38 1280w, https://img.fontdue.com/cdn-cgi/image/width=1920,quality=80,format=auto/https://www.fontdue.com/images/admin/dashboard.png?v=6fdeb42b38 1920w, https://img.fontdue.com/cdn-cgi/image/width=2560,quality=80,format=auto/https://www.fontdue.com/images/admin/dashboard.png?v=6fdeb42b38 2560w, https://img.fontdue.com/cdn-cgi/image/width=3200,quality=80,format=auto/https://www.fontdue.com/images/admin/dashboard.png?v=6fdeb42b38 3200w" sizes="(min-width: 768px) 58vw, 92vw" alt="Dashboard" loading="lazy" draggable="false" class="block w-full aspect-[16/10] object-cover object-top">
+    
+  
+</div>
+</figure>
+    </div><div class="swiper-slide shrink-0 w-full mr-3">
+      <figure class="m-0">
+  <div class="rounded-[10px] overflow-hidden border bg-white border-[#d0d0d0]">
+  <div class="px-3 py-2 flex items-center gap-1.5 border-b border-[#d0d0d0]">
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="ml-3 font-mono text-[10px] uppercase tracking-[0.04em] truncate text-black">
+      Font collections
+    </span>
+  </div>
+  
+    
+      
+      <img src="https://img.fontdue.com/cdn-cgi/image/width=1920,quality=80,format=auto/https://www.fontdue.com/images/admin/font-collections.png?v=2f0e423e22" srcset="https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/admin/font-collections.png?v=2f0e423e22 768w, https://img.fontdue.com/cdn-cgi/image/width=1280,quality=80,format=auto/https://www.fontdue.com/images/admin/font-collections.png?v=2f0e423e22 1280w, https://img.fontdue.com/cdn-cgi/image/width=1920,quality=80,format=auto/https://www.fontdue.com/images/admin/font-collections.png?v=2f0e423e22 1920w, https://img.fontdue.com/cdn-cgi/image/width=2560,quality=80,format=auto/https://www.fontdue.com/images/admin/font-collections.png?v=2f0e423e22 2560w, https://img.fontdue.com/cdn-cgi/image/width=3200,quality=80,format=auto/https://www.fontdue.com/images/admin/font-collections.png?v=2f0e423e22 3200w" sizes="(min-width: 768px) 58vw, 92vw" alt="Font collections" loading="lazy" draggable="false" class="block w-full aspect-[16/10] object-cover object-top">
+    
+  
+</div>
+</figure>
+    </div><div class="swiper-slide shrink-0 w-full mr-3">
+      <figure class="m-0">
+  <div class="rounded-[10px] overflow-hidden border bg-white border-[#d0d0d0]">
+  <div class="px-3 py-2 flex items-center gap-1.5 border-b border-[#d0d0d0]">
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="ml-3 font-mono text-[10px] uppercase tracking-[0.04em] truncate text-black">
+      Type tester editor
+    </span>
+  </div>
+  
+    
+      
+      <img src="https://img.fontdue.com/cdn-cgi/image/width=1920,quality=80,format=auto/https://www.fontdue.com/images/admin/type-tester.png?v=919572b81c" srcset="https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/admin/type-tester.png?v=919572b81c 768w, https://img.fontdue.com/cdn-cgi/image/width=1280,quality=80,format=auto/https://www.fontdue.com/images/admin/type-tester.png?v=919572b81c 1280w, https://img.fontdue.com/cdn-cgi/image/width=1920,quality=80,format=auto/https://www.fontdue.com/images/admin/type-tester.png?v=919572b81c 1920w, https://img.fontdue.com/cdn-cgi/image/width=2560,quality=80,format=auto/https://www.fontdue.com/images/admin/type-tester.png?v=919572b81c 2560w, https://img.fontdue.com/cdn-cgi/image/width=3200,quality=80,format=auto/https://www.fontdue.com/images/admin/type-tester.png?v=919572b81c 3200w" sizes="(min-width: 768px) 58vw, 92vw" alt="Type tester editor" loading="lazy" draggable="false" class="block w-full aspect-[16/10] object-cover object-top">
+    
+  
+</div>
+</figure>
+    </div><div class="swiper-slide shrink-0 w-full mr-3">
+      <figure class="m-0">
+  <div class="rounded-[10px] overflow-hidden border bg-white border-[#d0d0d0]">
+  <div class="px-3 py-2 flex items-center gap-1.5 border-b border-[#d0d0d0]">
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="ml-3 font-mono text-[10px] uppercase tracking-[0.04em] truncate text-black">
+      Components
+    </span>
+  </div>
+  
+    
+      
+      <img src="https://img.fontdue.com/cdn-cgi/image/width=1920,quality=80,format=auto/https://www.fontdue.com/images/admin/components.png?v=743c94472f" srcset="https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/admin/components.png?v=743c94472f 768w, https://img.fontdue.com/cdn-cgi/image/width=1280,quality=80,format=auto/https://www.fontdue.com/images/admin/components.png?v=743c94472f 1280w, https://img.fontdue.com/cdn-cgi/image/width=1920,quality=80,format=auto/https://www.fontdue.com/images/admin/components.png?v=743c94472f 1920w, https://img.fontdue.com/cdn-cgi/image/width=2560,quality=80,format=auto/https://www.fontdue.com/images/admin/components.png?v=743c94472f 2560w, https://img.fontdue.com/cdn-cgi/image/width=3200,quality=80,format=auto/https://www.fontdue.com/images/admin/components.png?v=743c94472f 3200w" sizes="(min-width: 768px) 58vw, 92vw" alt="Components" loading="lazy" draggable="false" class="block w-full aspect-[16/10] object-cover object-top">
+    
+  
+</div>
+</figure>
+    </div><div class="swiper-slide shrink-0 w-full mr-3">
+      <figure class="m-0">
+  <div class="rounded-[10px] overflow-hidden border bg-white border-[#d0d0d0]">
+  <div class="px-3 py-2 flex items-center gap-1.5 border-b border-[#d0d0d0]">
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="ml-3 font-mono text-[10px] uppercase tracking-[0.04em] truncate text-black">
+      Order invoice
+    </span>
+  </div>
+  
+    
+      
+      <img src="https://img.fontdue.com/cdn-cgi/image/width=1920,quality=80,format=auto/https://www.fontdue.com/images/admin/order-invoice.png?v=5df9d1da9f" srcset="https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/admin/order-invoice.png?v=5df9d1da9f 768w, https://img.fontdue.com/cdn-cgi/image/width=1280,quality=80,format=auto/https://www.fontdue.com/images/admin/order-invoice.png?v=5df9d1da9f 1280w, https://img.fontdue.com/cdn-cgi/image/width=1920,quality=80,format=auto/https://www.fontdue.com/images/admin/order-invoice.png?v=5df9d1da9f 1920w, https://img.fontdue.com/cdn-cgi/image/width=2560,quality=80,format=auto/https://www.fontdue.com/images/admin/order-invoice.png?v=5df9d1da9f 2560w, https://img.fontdue.com/cdn-cgi/image/width=3200,quality=80,format=auto/https://www.fontdue.com/images/admin/order-invoice.png?v=5df9d1da9f 3200w" sizes="(min-width: 768px) 58vw, 92vw" alt="Order invoice" loading="lazy" draggable="false" class="block w-full aspect-[16/10] object-cover object-top">
+    
+  
+</div>
+</figure>
+    </div>
+  </div>
+
+  <div class="mt-4 flex items-baseline gap-1">
+    <div data-swiper-pagination class="!static !w-auto !text-left mr-2 font-mono text-[11px] text-black/55 uppercase tracking-[0.04em] tabular-nums">
+    </div>
+    <button type="button" data-swiper-prev aria-label="Previous" class="!text-black hover:opacity-60 font-mono text-[14px] leading-none transition-opacity px-2 py-1 cursor-pointer">
+      ←
+    </button>
+    <button type="button" data-swiper-next aria-label="Next" class="!text-black hover:opacity-60 font-mono text-[14px] leading-none transition-opacity px-2 py-1 cursor-pointer">
+      →
+    </button>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+<section class="mx-[calc(50%-50vw)] bg-[#111] text-gray-200 pb-24">
+  <style>
+    .fd-wire line, .fd-wire rect, .fd-wire polyline, .fd-wire circle, .fd-wire path { vector-effect: non-scaling-stroke; }
+    /* Mobile: show only the active graphic so the column matches its height
+       (the stacked graphql panel is ~2.5x taller than the wireframes). */
+    #foundry-accordion [data-acc-graphic][data-active="false"] { display: none; }
+    @media (min-width: 768px) {
+      /* Desktop: keep all graphics overlapping in one cell so the column
+         reserves the tallest graphic's height and never reflows on switch. */
+      #foundry-accordion [data-acc-graphic][data-active="false"] { display: block; visibility: hidden; }
+      #foundry-accordion [data-acc-graphic][data-active="true"] { visibility: visible; }
+    }
+  </style>
+  
+  <div class="w-full max-w-site mx-auto px-[1lh]">
+    <div class="pt-3.5 font-mono text-xs uppercase tracking-[0.06em] tabular-nums text-white/50">
+  Building your foundry website
+</div>
+    <div class="mt-20 mx-auto max-w-[920px] text-center text-[clamp(18px,2.4vw,28px)] leading-[1.35] text-balance text-white [&_p]:m-0 [&_a]:underline [&_a:hover]:opacity-70">
+      
+<p>Easy to launch without coding experience, and capable for advanced use-cases. You have several options to build your site, ranging in technical complexity and level of customizability.</p>
+
+    </div>
+
+    <div id="foundry-accordion" class="mt-28 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+      <div class="md:col-span-5">
+        <div class="border-t border-white/15">
+          <div data-acc-item="0" data-active="true" class="border-b border-white/15">
+            <button type="button" data-acc-trigger class="w-full flex items-baseline gap-4 text-left py-4 cursor-pointer hover:opacity-90 transition-opacity">
+              <span class="font-mono text-xs text-white/40 tabular-nums shrink-0 w-6">
+                01
+              </span>
+              <span class="flex-1 text-[18px] leading-[1.25]">Start with the demo template</span>
+              <span data-acc-icon class="font-mono text-white/40 shrink-0">
+                −
+              </span>
+            </button>
+            <div data-acc-body class="pb-5 pl-10 pr-4 ">
+              <div class="m-0 text-white/55 leading-[1.55] max-w-[440px] [&_p]:m-0">
+                
+<p>Your Fontdue subscription comes with a basic template you can use to start selling fonts immediately. If you’re just testing things out this is a good place to start.</p>
+
+              </div>
+              <a href="/docs/reference/the-demo-template" class="!text-black inline-block mt-5 px-3.5 py-[7px] bg-lime hover:opacity-85 transition-opacity">
+                Build with the template
+              </a>
+            </div>
+          </div><div data-acc-item="1" data-active="false" class="border-b border-white/15">
+            <button type="button" data-acc-trigger class="w-full flex items-baseline gap-4 text-left py-4 cursor-pointer hover:opacity-90 transition-opacity">
+              <span class="font-mono text-xs text-white/40 tabular-nums shrink-0 w-6">
+                02
+              </span>
+              <span class="flex-1 text-[18px] leading-[1.25]">Add components to your site</span>
+              <span data-acc-icon class="font-mono text-white/40 shrink-0">
+                +
+              </span>
+            </button>
+            <div data-acc-body class="pb-5 pl-10 pr-4 hidden">
+              <div class="m-0 text-white/55 leading-[1.55] max-w-[440px] [&_p]:m-0">
+                
+<p>Use low-code tools like Webflow or Framer to build your site. Drop in Fontdue components and you have a working foundry site.</p>
+
+              </div>
+              <a href="/docs/website/add-to-your-site" class="!text-black inline-block mt-5 px-3.5 py-[7px] bg-lime hover:opacity-85 transition-opacity">
+                Add to any site
+              </a>
+            </div>
+          </div><div data-acc-item="2" data-active="false" class="border-b border-white/15">
+            <button type="button" data-acc-trigger class="w-full flex items-baseline gap-4 text-left py-4 cursor-pointer hover:opacity-90 transition-opacity">
+              <span class="font-mono text-xs text-white/40 tabular-nums shrink-0 w-6">
+                03
+              </span>
+              <span class="flex-1 text-[18px] leading-[1.25]">Build a custom site</span>
+              <span data-acc-icon class="font-mono text-white/40 shrink-0">
+                +
+              </span>
+            </button>
+            <div data-acc-body class="pb-5 pl-10 pr-4 hidden">
+              <div class="m-0 text-white/55 leading-[1.55] max-w-[440px] [&_p]:m-0">
+                
+<p>Fontdue is a headless CMS purpose-built for type foundry websites. The GraphQL API allows you to query all your Fontdue content, and extract information from fonts to power your website template. Import the React components and preload them with server-side rendering for the best user experience.</p>
+
+              </div>
+              <a href="/docs/develop/build" class="!text-black inline-block mt-5 px-3.5 py-[7px] bg-lime hover:opacity-85 transition-opacity">
+                Read the docs
+              </a>
+            </div>
+          </div><div data-acc-item="3" data-active="false" class="border-b border-white/15">
+            <button type="button" data-acc-trigger class="w-full flex items-baseline gap-4 text-left py-4 cursor-pointer hover:opacity-90 transition-opacity">
+              <span class="font-mono text-xs text-white/40 tabular-nums shrink-0 w-6">
+                04
+              </span>
+              <span class="flex-1 text-[18px] leading-[1.25]">Have us build your site</span>
+              <span data-acc-icon class="font-mono text-white/40 shrink-0">
+                +
+              </span>
+            </button>
+            <div data-acc-body class="pb-5 pl-10 pr-4 hidden">
+              <div class="m-0 text-white/55 leading-[1.55] max-w-[440px] [&_p]:m-0">
+                
+<p>Want us to handle everything? We can build your site for you based on your Figma mockups.</p>
+
+              </div>
+              <a href="/services" class="!text-black inline-block mt-5 px-3.5 py-[7px] bg-lime hover:opacity-85 transition-opacity">
+                Learn about services
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-7">
+        
+        <div class="grid">
+          <div data-acc-graphic="0" data-active="true" class="col-start-1 row-start-1 min-w-0">
+            <div class="rounded-[10px] overflow-hidden border bg-[#0a0a0a] border-white/10">
+  <div class="px-3 py-2 flex items-center gap-1.5 border-b border-white/10">
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="ml-3 font-mono text-[10px] uppercase tracking-[0.04em] truncate text-white/55">
+      yourstore.fontdue.com
+    </span>
+  </div>
+  
+  <svg viewBox="0 0 600 388" fill="none" class="w-full h-auto block fd-wire" aria-hidden="true">
+<g transform="translate(30,24) scale(1)">
+<path d="M80 0H0V6H80V0Z" fill="white" fill-opacity="0.35"/>
+<path d="M450 2H420V5H450V2Z" fill="white" fill-opacity="0.15"/>
+<path d="M490 2H460V5H490V2Z" fill="white" fill-opacity="0.15"/>
+<path d="M540 2H500V5H540V2Z" fill="white" fill-opacity="0.15"/>
+<path d="M540 18H0V172H540V18Z" fill="white" fill-opacity="0.28"/>
+<path d="M296 180H244V192H296V180Z" fill="#E7FF6E" fill-opacity="0.85"/>
+<path d="M335 252H227V256H335V252Z" fill="white" fill-opacity="0.3"/>
+<path d="M112 202H4V206H112V202Z" fill="white" fill-opacity="0.3"/>
+<path d="M540 198H0V241H540V198Z" fill="white" fill-opacity="0.04"/>
+<path d="M149 260H0V326H149V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M242 260H227V275H242V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M310 260H295V275H310V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M276 260H261V275H276V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M344 260H329V275H344V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M395 260H380V275H395V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M446 260H431V275H446V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M497 260H482V275H497V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M259 260H244V275H259V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M327 260H312V275H327V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M378 260H363V275H378V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M429 260H414V275H429V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M480 260H465V275H480V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M293 260H278V275H293V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M361 260H346V275H361V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M412 260H397V275H412V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M463 260H448V275H463V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M514 260H499V275H514V260Z" fill="white" fill-opacity="0.04"/>
+<path d="M242 294H227V309H242V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M310 294H295V309H310V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M276 294H261V309H276V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M344 294H329V309H344V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M395 294H380V309H395V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M446 294H431V309H446V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M497 294H482V309H497V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M259 294H244V309H259V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M327 294H312V309H327V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M378 294H363V309H378V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M429 294H414V309H429V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M480 294H465V309H480V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M293 294H278V309H293V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M361 294H346V309H361V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M412 294H397V309H412V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M463 294H448V309H463V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M514 294H499V309H514V294Z" fill="white" fill-opacity="0.04"/>
+<path d="M242 277H227V292H242V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M310 277H295V292H310V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M276 277H261V292H276V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M344 277H329V292H344V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M395 277H380V292H395V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M446 277H431V292H446V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M497 277H482V292H497V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M259 277H244V292H259V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M327 277H312V292H327V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M378 277H363V292H378V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M429 277H414V292H429V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M480 277H465V292H480V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M293 277H278V292H293V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M361 277H346V292H361V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M412 277H397V292H412V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M463 277H448V292H463V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M514 277H499V292H514V277Z" fill="white" fill-opacity="0.04"/>
+<path d="M242 311H227V326H242V311Z" fill="white" fill-opacity="0.04"/>
+<path d="M310 311H295V326H310V311Z" fill="white" fill-opacity="0.04"/>
+<path d="M276 311H261V326H276V311Z" fill="white" fill-opacity="0.04"/>
+<path d="M344 311H329V326H344V311Z" fill="white" fill-opacity="0.04"/>
+<path d="M259 311H244V326H259V311Z" fill="white" fill-opacity="0.04"/>
+<path d="M327 311H312V326H327V311Z" fill="white" fill-opacity="0.04"/>
+<path d="M293 311H278V326H293V311Z" fill="white" fill-opacity="0.04"/>
+<path d="M361 311H346V326H361V311Z" fill="white" fill-opacity="0.04"/>
+<path d="M423 203H537" stroke="white" stroke-opacity="0.2"/>
+<path d="M343 203H411" stroke="white" stroke-opacity="0.2"/>
+<path d="M0 286H149" stroke="white" stroke-opacity="0.2"/>
+<path d="M0 270H149" stroke="white" stroke-opacity="0.2"/>
+<path d="M0 260H149" stroke="white" stroke-opacity="0.2"/>
+<path d="M457 206C458.657 206 460 204.657 460 203C460 201.343 458.657 200 457 200C455.343 200 454 201.343 454 203C454 204.657 455.343 206 457 206Z" fill="white" fill-opacity="0.55"/>
+<path d="M377 206C378.657 206 380 204.657 380 203C380 201.343 378.657 200 377 200C375.343 200 374 201.343 374 203C374 204.657 375.343 206 377 206Z" fill="white" fill-opacity="0.55"/>
+</g>
+</svg>
+
+
+</div>
+          </div><div data-acc-graphic="1" data-active="false" class="col-start-1 row-start-1 min-w-0">
+            <div class="rounded-[10px] overflow-hidden border bg-[#0a0a0a] border-white/10">
+  <div class="px-3 py-2 flex items-center gap-1.5 border-b border-white/10">
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="ml-3 font-mono text-[10px] uppercase tracking-[0.04em] truncate text-white/55">
+      low-code + fontdue components
+    </span>
+  </div>
+  
+  <svg viewBox="0 0 600 388" fill="none" class="w-full h-auto block fd-wire" aria-hidden="true">
+<g transform="translate(37.3,24) scale(0.827)">
+<path d="M59 13V393" stroke="white" stroke-opacity="0.1"/>
+<path d="M36 14H16V34H36V14Z" fill="white" fill-opacity="0.2"/>
+<path d="M36 44H16V64H36V44Z" stroke="white" stroke-opacity="0.3"/>
+<path d="M36 74H16V94H36V74Z" fill="#E7FF6E" fill-opacity="0.35"/>
+<path d="M36 104H16V124H36V104Z" stroke="#E7FF6E" stroke-opacity="0.35"/>
+<path d="M36 134H16V154H36V134Z" stroke="white" stroke-opacity="0.3" stroke-dasharray="2 2"/>
+<path d="M263 13H87V167H263V13Z" fill="white" fill-opacity="0.28"/>
+<path d="M443 13H267V167H443V13Z" fill="white" fill-opacity="0.28"/>
+<path d="M623 13H447V167H623V13Z" fill="white" fill-opacity="0.28"/>
+<path d="M195 260H87V264H195V260Z" fill="white" fill-opacity="0.3"/>
+<path d="M195 354H87V358H195V354Z" fill="white" fill-opacity="0.3"/>
+<path d="M195 307H87V311H195V307Z" fill="white" fill-opacity="0.3"/>
+<path d="M623 256H83V299H623V256Z" fill="#E7FF6E" fill-opacity="0.15"/>
+<path d="M623 350H83V393H623V350Z" fill="white" fill-opacity="0.04"/>
+<path d="M623 303H83V346H623V303Z" fill="white" fill-opacity="0.04"/>
+<path d="M496 261H610" stroke="white" stroke-opacity="0.2"/>
+<path d="M496 355H610" stroke="white" stroke-opacity="0.2"/>
+<path d="M496 308H610" stroke="white" stroke-opacity="0.2"/>
+<path d="M416 261H484" stroke="white" stroke-opacity="0.2"/>
+<path d="M416 355H484" stroke="white" stroke-opacity="0.2"/>
+<path d="M416 308H484" stroke="white" stroke-opacity="0.2"/>
+<path d="M530 264C531.657 264 533 262.657 533 261C533 259.343 531.657 258 530 258C528.343 258 527 259.343 527 261C527 262.657 528.343 264 530 264Z" fill="white" fill-opacity="0.55"/>
+<path d="M570 358C571.657 358 573 356.657 573 355C573 353.343 571.657 352 570 352C568.343 352 567 353.343 567 355C567 356.657 568.343 358 570 358Z" fill="white" fill-opacity="0.55"/>
+<path d="M530 311C531.657 311 533 309.657 533 308C533 306.343 531.657 305 530 305C528.343 305 527 306.343 527 308C527 309.657 528.343 311 530 311Z" fill="white" fill-opacity="0.55"/>
+<path d="M450 264C451.657 264 453 262.657 453 261C453 259.343 451.657 258 450 258C448.343 258 447 259.343 447 261C447 262.657 448.343 264 450 264Z" fill="white" fill-opacity="0.55"/>
+<path d="M440 358C441.657 358 443 356.657 443 355C443 353.343 441.657 352 440 352C438.343 352 437 353.343 437 355C437 356.657 438.343 358 440 358Z" fill="white" fill-opacity="0.55"/>
+<path d="M470 311C471.657 311 473 309.657 473 308C473 306.343 471.657 305 470 305C468.343 305 467 306.343 467 308C467 309.657 468.343 311 470 311Z" fill="white" fill-opacity="0.55"/>
+<path d="M167 171H87V176H167V171Z" fill="white" fill-opacity="0.3"/>
+<path d="M347 171H267V176H347V171Z" fill="white" fill-opacity="0.3"/>
+<path d="M527 171H447V176H527V171Z" fill="white" fill-opacity="0.3"/>
+<path d="M167 183H87V188H167V183Z" fill="white" fill-opacity="0.3"/>
+<path d="M347 183H267V188H347V183Z" fill="white" fill-opacity="0.3"/>
+<path d="M527 183H447V188H527V183Z" fill="white" fill-opacity="0.3"/>
+<path d="M167 195H87V200H167V195Z" fill="white" fill-opacity="0.3"/>
+<path d="M347 195H267V200H347V195Z" fill="white" fill-opacity="0.3"/>
+<path d="M527 195H447V200H527V195Z" fill="white" fill-opacity="0.3"/>
+<path d="M157 177H87V182H157V177Z" fill="white" fill-opacity="0.3"/>
+<path d="M337 177H267V182H337V177Z" fill="white" fill-opacity="0.3"/>
+<path d="M517 177H447V182H517V177Z" fill="white" fill-opacity="0.3"/>
+<path d="M157 189H87V194H157V189Z" fill="white" fill-opacity="0.3"/>
+<path d="M337 189H267V194H337V189Z" fill="white" fill-opacity="0.3"/>
+<path d="M517 189H447V194H517V189Z" fill="white" fill-opacity="0.3"/>
+</g>
+</svg>
+
+
+</div>
+          </div><div data-acc-graphic="2" data-active="false" class="col-start-1 row-start-1 min-w-0">
+            <style>
+  .gql-kw { color: var(--color-lime); }
+  .gql-fld { color: #7DD3FC; }
+  .gql-arg { color: rgba(255,255,255,0.55); }
+  .gql-num { color: #FCA5A5; }
+  .gql-str { color: #A7F3D0; }
+  .gql-pun { color: rgba(255,255,255,0.35); }
+</style>
+<div class="rounded-[10px] overflow-hidden border bg-[#0a0a0a] border-white/10 font-mono text-xs h-full flex flex-col">
+  <div class="px-3 py-2 flex items-center gap-1.5 border-b border-white/10">
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="ml-3 font-mono text-[10px] uppercase tracking-[0.04em] truncate text-white/55">
+      graphql query
+    </span>
+  </div>
+  
+  <div class="flex-1 grid grid-cols-1 md:grid-cols-2 md:divide-x divide-white/10">
+    <div class="px-4 py-4 min-w-0">
+      <div class="mb-2 text-[10px] uppercase tracking-[0.04em] text-white/40">Query</div>
+      <pre class="m-0 whitespace-pre overflow-x-auto leading-[1.55] text-white/85"><span class="gql-kw">query</span> <span class="gql-fld">Catalog</span> <span class="gql-pun">{</span>
+  <span class="gql-fld">viewer</span> <span class="gql-pun">{</span>
+    <span class="gql-fld">fontCollections</span><span class="gql-pun">(</span><span class="gql-arg">first</span><span class="gql-pun">:</span> <span class="gql-num">1</span><span class="gql-pun">)</span> <span class="gql-pun">{</span>
+      <span class="gql-fld">edges</span> <span class="gql-pun">{</span>
+        <span class="gql-fld">node</span> <span class="gql-pun">{</span>
+          <span class="gql-fld">name</span>
+          <span class="gql-fld">fontStyles</span> <span class="gql-pun">{</span>
+            <span class="gql-fld">name</span>
+            <span class="gql-fld">sku</span> <span class="gql-pun">{</span> <span class="gql-fld">price</span> <span class="gql-pun">{</span> <span class="gql-fld">amount</span> <span class="gql-fld">currency</span> <span class="gql-pun">}</span> <span class="gql-pun">}</span>
+          <span class="gql-pun">}</span>
+        <span class="gql-pun">}</span>
+      <span class="gql-pun">}</span>
+    <span class="gql-pun">}</span>
+  <span class="gql-pun">}</span>
+<span class="gql-pun">}</span>
+</pre>
+    </div>
+    <div class="px-4 py-4 min-w-0">
+      <div class="mb-2 text-[10px] uppercase tracking-[0.04em] text-white/40">Response</div>
+      <pre class="m-0 whitespace-pre overflow-x-auto leading-[1.55] text-white/85"><span class="gql-pun">{</span>
+  <span class="gql-arg">"data"</span><span class="gql-pun">:</span> <span class="gql-pun">{</span>
+    <span class="gql-arg">"viewer"</span><span class="gql-pun">:</span> <span class="gql-pun">{</span>
+      <span class="gql-arg">"fontCollections"</span><span class="gql-pun">:</span> <span class="gql-pun">{</span>
+        <span class="gql-arg">"edges"</span><span class="gql-pun">:</span> <span class="gql-pun">[</span>
+          <span class="gql-pun">{</span>
+            <span class="gql-arg">"node"</span><span class="gql-pun">:</span> <span class="gql-pun">{</span>
+              <span class="gql-arg">"name"</span><span class="gql-pun">:</span> <span class="gql-str">"Tonka Mono"</span><span class="gql-pun">,</span>
+              <span class="gql-arg">"fontStyles"</span><span class="gql-pun">:</span> <span class="gql-pun">[</span>
+                <span class="gql-pun">{</span> <span class="gql-arg">"name"</span><span class="gql-pun">:</span> <span class="gql-str">"Regular"</span><span class="gql-pun">,</span> <span class="gql-arg">"sku"</span><span class="gql-pun">:</span> <span class="gql-pun">{</span> <span class="gql-arg">"price"</span><span class="gql-pun">:</span> <span class="gql-pun">{</span> <span class="gql-arg">"amount"</span><span class="gql-pun">:</span> <span class="gql-str">"90.00"</span><span class="gql-pun">,</span> <span class="gql-arg">"currency"</span><span class="gql-pun">:</span> <span class="gql-str">"USD"</span> <span class="gql-pun">}</span> <span class="gql-pun">}</span> <span class="gql-pun">}</span>
+              <span class="gql-pun">]</span>
+            <span class="gql-pun">}</span>
+          <span class="gql-pun">}</span>
+        <span class="gql-pun">]</span>
+      <span class="gql-pun">}</span>
+    <span class="gql-pun">}</span>
+  <span class="gql-pun">}</span>
+<span class="gql-pun">}</span>
+</pre>
+    </div>
+  </div>
+  <div class="px-3 py-2 flex items-center justify-between border-t border-white/10 font-mono text-[11px] text-white/55 uppercase tracking-[0.04em]">
+    <span class="truncate">POST /api/graphql</span>
+    <span class="text-lime shrink-0">● 200 OK · 32 ms</span>
+  </div>
+
+</div>
+          </div><div data-acc-graphic="3" data-active="false" class="col-start-1 row-start-1 min-w-0">
+            <div class="rounded-[10px] overflow-hidden border bg-[#0a0a0a] border-white/10">
+  <div class="px-3 py-2 flex items-center gap-1.5 border-b border-white/10">
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="w-2.5 h-2.5 rounded-full bg-lime"></span>
+    <span class="ml-3 font-mono text-[10px] uppercase tracking-[0.04em] truncate text-white/55">
+      figma → fontdue site
+    </span>
+  </div>
+  
+  <svg viewBox="0 0 600 388" fill="none" class="w-full h-auto block fd-wire" aria-hidden="true">
+<g transform="translate(24,33.7) scale(0.96)">
+<path d="M237 47H57V314H237V47Z" stroke="white" stroke-opacity="0.2"/>
+<path d="M547 47H367V314H547V47Z" stroke="white" stroke-opacity="0.2"/>
+<path d="M120 158H63V160H120V158Z" fill="white" fill-opacity="0.3"/>
+<path d="M430 158H373V160H430V158Z" fill="white" fill-opacity="0.3"/>
+<path d="M190 296H133V298H190V296Z" fill="white" fill-opacity="0.3"/>
+<path d="M500 296H443V298H500V296Z" fill="white" fill-opacity="0.3"/>
+<path d="M190 254H133V256H190V254Z" fill="white" fill-opacity="0.3"/>
+<path d="M500 254H443V256H500V254Z" fill="white" fill-opacity="0.3"/>
+<path d="M90 51H63V55H90V51Z" fill="white" fill-opacity="0.3"/>
+<path d="M400 51H373V55H400V51Z" fill="white" fill-opacity="0.3"/>
+<path d="M120 51H93V55H120V51Z" fill="white" fill-opacity="0.3"/>
+<path d="M430 51H403V55H430V51Z" fill="white" fill-opacity="0.3"/>
+<path d="M150 51H123V55H150V51Z" fill="white" fill-opacity="0.3"/>
+<path d="M460 51H433V55H460V51Z" fill="white" fill-opacity="0.3"/>
+<path d="M180 51H153V55H180V51Z" fill="white" fill-opacity="0.3"/>
+<path d="M490 51H463V55H490V51Z" fill="white" fill-opacity="0.3"/>
+<path d="M231 51H227V55H231V51Z" fill="white" fill-opacity="0.3"/>
+<path d="M541 51H537V55H541V51Z" fill="white" fill-opacity="0.3"/>
+<path d="M143 162H63V167H143V162Z" fill="white" fill-opacity="0.3"/>
+<path d="M453 162H373V167H453V162Z" fill="white" fill-opacity="0.3"/>
+<path d="M228 162H148V167H228V162Z" fill="white" fill-opacity="0.3"/>
+<path d="M538 162H458V167H538V162Z" fill="white" fill-opacity="0.3"/>
+<path d="M143 174H63V179H143V174Z" fill="white" fill-opacity="0.3"/>
+<path d="M453 174H373V179H453V174Z" fill="white" fill-opacity="0.3"/>
+<path d="M143 186H63V191H143V186Z" fill="white" fill-opacity="0.3"/>
+<path d="M453 186H373V191H453V186Z" fill="white" fill-opacity="0.3"/>
+<path d="M228 174H148V179H228V174Z" fill="white" fill-opacity="0.3"/>
+<path d="M538 174H458V179H538V174Z" fill="white" fill-opacity="0.3"/>
+<path d="M228 186H148V191H228V186Z" fill="white" fill-opacity="0.3"/>
+<path d="M538 186H458V191H538V186Z" fill="white" fill-opacity="0.3"/>
+<path d="M133 168H63V173H133V168Z" fill="white" fill-opacity="0.3"/>
+<path d="M443 168H373V173H443V168Z" fill="white" fill-opacity="0.3"/>
+<path d="M218 168H148V173H218V168Z" fill="white" fill-opacity="0.3"/>
+<path d="M528 168H458V173H528V168Z" fill="white" fill-opacity="0.3"/>
+<path d="M133 180H63V185H133V180Z" fill="white" fill-opacity="0.3"/>
+<path d="M443 180H373V185H443V180Z" fill="white" fill-opacity="0.3"/>
+<path d="M218 180H148V185H218V180Z" fill="white" fill-opacity="0.3"/>
+<path d="M528 180H458V185H528V180Z" fill="white" fill-opacity="0.3"/>
+<path d="M231 59H63V156H231V59Z" fill="white" fill-opacity="0.06"/>
+<path d="M541 59H373V156H541V59Z" fill="#E7FF6E" fill-opacity="0.15"/>
+<path d="M231 195H63V212H231V195Z" fill="white" fill-opacity="0.04"/>
+<path d="M541 195H373V212H541V195Z" fill="white" fill-opacity="0.04"/>
+<path d="M231 214H63V231H231V214Z" fill="white" fill-opacity="0.04"/>
+<path d="M541 214H373V231H541V214Z" fill="white" fill-opacity="0.04"/>
+<path d="M231 233H63V250H231V233Z" fill="white" fill-opacity="0.04"/>
+<path d="M541 233H373V250H541V233Z" fill="white" fill-opacity="0.04"/>
+<path d="M115 254H63V308H115V254Z" fill="white" fill-opacity="0.04"/>
+<path d="M425 254H373V308H425V254Z" fill="#E7FF6E" fill-opacity="0.15"/>
+<path d="M141 258H133V266H141V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M451 258H443V266H451V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M177 258H169V266H177V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M487 258H479V266H487V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M159 258H151V266H159V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M469 258H461V266H469V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M195 258H187V266H195V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M505 258H497V266H505V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M222 258H214V266H222V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M532 258H524V266H532V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M150 258H142V266H150V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M460 258H452V266H460V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M186 258H178V266H186V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M496 258H488V266H496V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M213 258H205V266H213V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M523 258H515V266H523V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M168 258H160V266H168V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M478 258H470V266H478V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M204 258H196V266H204V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M514 258H506V266H514V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M231 258H223V266H231V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M541 258H533V266H541V258Z" fill="white" fill-opacity="0.04"/>
+<path d="M141 276H133V284H141V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M451 276H443V284H451V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M141 300H133V308H141V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M451 300H443V308H451V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M177 276H169V284H177V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M487 276H479V284H487V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M177 300H169V308H177V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M487 300H479V308H487V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M159 276H151V284H159V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M469 276H461V284H469V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M159 300H151V308H159V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M469 300H461V308H469V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M195 276H187V284H195V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M505 276H497V284H505V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M195 300H187V308H195V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M505 300H497V308H505V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M222 276H214V284H222V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M532 276H524V284H532V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M222 300H214V308H222V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M532 300H524V308H532V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M150 276H142V284H150V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M460 276H452V284H460V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M150 300H142V308H150V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M460 300H452V308H460V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M186 276H178V284H186V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M496 276H488V284H496V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M186 300H178V308H186V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M496 300H488V308H496V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M213 276H205V284H213V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M523 276H515V284H523V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M213 300H205V308H213V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M523 300H515V308H523V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M168 276H160V284H168V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M478 276H470V284H478V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M168 300H160V308H168V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M478 300H470V308H478V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M204 276H196V284H204V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M514 276H506V284H514V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M204 300H196V308H204V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M514 300H506V308H514V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M231 276H223V284H231V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M541 276H533V284H541V276Z" fill="white" fill-opacity="0.04"/>
+<path d="M231 300H223V308H231V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M541 300H533V308H541V300Z" fill="white" fill-opacity="0.04"/>
+<path d="M141 267H133V275H141V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M451 267H443V275H451V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M177 267H169V275H177V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M487 267H479V275H487V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M159 267H151V275H159V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M469 267H461V275H469V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M195 267H187V275H195V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M505 267H497V275H505V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M222 267H214V275H222V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M532 267H524V275H532V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M150 267H142V275H150V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M460 267H452V275H460V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M186 267H178V275H186V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M496 267H488V275H496V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M213 267H205V275H213V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M523 267H515V275H523V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M168 267H160V275H168V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M478 267H470V275H478V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M204 267H196V275H204V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M514 267H506V275H514V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M231 267H223V275H231V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M541 267H533V275H541V267Z" fill="white" fill-opacity="0.04"/>
+<path d="M141 285H133V293H141V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M451 285H443V293H451V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M177 285H169V293H177V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M487 285H479V293H487V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M159 285H151V293H159V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M469 285H461V293H469V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M195 285H187V293H195V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M505 285H497V293H505V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M150 285H142V293H150V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M460 285H452V293H460V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M186 285H178V293H186V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M496 285H488V293H496V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M168 285H160V293H168V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M478 285H470V293H478V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M204 285H196V293H204V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M514 285H506V293H514V285Z" fill="white" fill-opacity="0.04"/>
+<path d="M257 191H348" stroke="white"/>
+<path d="M340 185L348 191L340 197" stroke="white"/>
+<text x="57" y="38" font-family="'Tonka Mono', ui-monospace, monospace" font-size="14" fill="white" fill-opacity="0.7">your-design.fig</text>
+<text x="367" y="38" font-family="'Tonka Mono', ui-monospace, monospace" font-size="14" fill="#E7FF6E">yoursite.com</text>
+</g>
+</svg>
+
+
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    var root = document.getElementById('foundry-accordion');
+    if (!root) return;
+    var items = Array.prototype.slice.call(root.querySelectorAll('[data-acc-item]'));
+    var graphics = Array.prototype.slice.call(root.querySelectorAll('[data-acc-graphic]'));
+    function activate(idx) {
+      items.forEach(function(item, i) {
+        var active = i === idx;
+        item.dataset.active = active ? 'true' : 'false';
+        var body = item.querySelector('[data-acc-body]');
+        if (body) body.classList.toggle('hidden', !active);
+        var icon = item.querySelector('[data-acc-icon]');
+        if (icon) icon.textContent = active ? '−' : '+';
+      });
+      graphics.forEach(function(g, i) {
+        g.dataset.active = i === idx ? 'true' : 'false';
+      });
+    }
+    items.forEach(function(item, i) {
+      var btn = item.querySelector('[data-acc-trigger]');
+      if (btn) btn.addEventListener('click', function() { activate(i); });
+    });
+  })();
+</script>
+
+</section>
+<section class="px-[1lh] pb-20 scroll-mt-4">
+  <div class="pt-3.5 font-mono text-xs uppercase tracking-[0.06em] tabular-nums text-black/55 border-t border-black/20">
+  Showcase
+</div>
+  <div class="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+    <div class="md:col-span-5 text-sm [&_p]:m-0 [&_p:not(:first-child)]:mt-2.5 [&_p]:leading-[1.55] [&_p]:max-w-[420px] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>a:not(:first-child)]:mt-5">
+      
+<p>With Fontdue your website can be fully customized. We helped launch 100+ foundries. See some examples and get insights into how they were built.</p>
+<a href="/showcase" class="!text-black inline-block px-3.5 py-[7px] bg-lime hover:opacity-85 transition-opacity !no-underline">
+  See the showcase
+</a>
+
+    </div>
+    <div class="md:col-span-7 ">
+      
+<div id="examples-grid" phx-update="ignore" class="grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-10">
+  <div style="display:none">
+    <a href="https://latinotype.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/latinotype.png?v=9f8f4ab486" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/latinotype.png?v=9f8f4ab486 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/latinotype.png?v=9f8f4ab486 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/latinotype.png?v=9f8f4ab486 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/latinotype.png?v=9f8f4ab486 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Latinotype" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/latinotype.mp4?v=7017640a0e" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Latinotype</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Next.js
+    </span>
+    <span class="ml-auto shrink-0 inline-flex items-center px-1.5 py-0.5 bg-lime text-black text-[10px] font-mono uppercase tracking-[0.04em]">
+      Built by Fontdue
+    </span>
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://generaltypestudio.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/general-type-studio.png?v=6180b34ca0" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/general-type-studio.png?v=6180b34ca0 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/general-type-studio.png?v=6180b34ca0 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/general-type-studio.png?v=6180b34ca0 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/general-type-studio.png?v=6180b34ca0 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="General Type Studio" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/general-type-studio.mp4?v=b5a227dd51" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">General Type Studio</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Fontdue
+    </span>
+    <span class="ml-auto shrink-0 inline-flex items-center px-1.5 py-0.5 bg-lime text-black text-[10px] font-mono uppercase tracking-[0.04em]">
+      Built by Fontdue
+    </span>
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://www.dblzr.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/double-zero.png?v=0714fcaf1e" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/double-zero.png?v=0714fcaf1e 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/double-zero.png?v=0714fcaf1e 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/double-zero.png?v=0714fcaf1e 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/double-zero.png?v=0714fcaf1e 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="D0UBLE ZER0" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/double-zero.mp4?v=079c6e5e74" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">D0UBLE ZER0</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Next.js
+    </span>
+    <span class="ml-auto shrink-0 inline-flex items-center px-1.5 py-0.5 bg-lime text-black text-[10px] font-mono uppercase tracking-[0.04em]">
+      Built by Fontdue
+    </span>
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://www.renebieder.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/rene-bieder.png?v=d248b0291e" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/rene-bieder.png?v=d248b0291e 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/rene-bieder.png?v=d248b0291e 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/rene-bieder.png?v=d248b0291e 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/rene-bieder.png?v=d248b0291e 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Rene Bieder" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/rene-bieder.mp4?v=425f12bb81" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Rene Bieder</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Next.js
+    </span>
+    <span class="ml-auto shrink-0 inline-flex items-center px-1.5 py-0.5 bg-lime text-black text-[10px] font-mono uppercase tracking-[0.04em]">
+      Built by Fontdue
+    </span>
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://www.alexlescieux.com" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/alex-lescieux.png?v=d7782ae78d" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/alex-lescieux.png?v=d7782ae78d 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/alex-lescieux.png?v=d7782ae78d 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/alex-lescieux.png?v=d7782ae78d 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/alex-lescieux.png?v=d7782ae78d 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Alex Lescieux" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/alex-lescieux.mp4?v=860421b5de" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Alex Lescieux</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      WordPress
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://www.amafoundry.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/ama-foundry.png?v=1b372e3403" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/ama-foundry.png?v=1b372e3403 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/ama-foundry.png?v=1b372e3403 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/ama-foundry.png?v=1b372e3403 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/ama-foundry.png?v=1b372e3403 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Ama Foundry" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/ama-foundry.mp4?v=ee9b206570" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Ama Foundry</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      SvelteKit
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://www.britishstandardtype.xyz" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/british-standard-type.png?v=1430ff3c32" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/british-standard-type.png?v=1430ff3c32 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/british-standard-type.png?v=1430ff3c32 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/british-standard-type.png?v=1430ff3c32 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/british-standard-type.png?v=1430ff3c32 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="British Standard Type" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/british-standard-type.mp4?v=62807be89e" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">British Standard Type</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Vue
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://www.charlotterohde.de/typefaces" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/charlotte-rohde.png?v=f1d741e2aa" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/charlotte-rohde.png?v=f1d741e2aa 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/charlotte-rohde.png?v=f1d741e2aa 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/charlotte-rohde.png?v=f1d741e2aa 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/charlotte-rohde.png?v=f1d741e2aa 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Charlotte Rohde Typefaces" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/charlotte-rohde.mp4?v=e38bf7ac9f" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Charlotte Rohde Typefaces</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Next.js
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://celine-hurka.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/celine-hurka.png?v=fc93e2a47d" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/celine-hurka.png?v=fc93e2a47d 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/celine-hurka.png?v=fc93e2a47d 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/celine-hurka.png?v=fc93e2a47d 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/celine-hurka.png?v=fc93e2a47d 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Céline Hurka" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/celine-hurka.mp4?v=85931e05d6" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Céline Hurka</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      WordPress
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://deinwaller.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/deinwaller.png?v=a2886dc163" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/deinwaller.png?v=a2886dc163 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/deinwaller.png?v=a2886dc163 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/deinwaller.png?v=a2886dc163 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/deinwaller.png?v=a2886dc163 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="D Einwaller" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/deinwaller.mp4?v=6418a944ee" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">D Einwaller</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Cargo
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://www.dograytype.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/dogray-type.png?v=fa1a34ff82" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/dogray-type.png?v=fa1a34ff82 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/dogray-type.png?v=fa1a34ff82 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/dogray-type.png?v=fa1a34ff82 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/dogray-type.png?v=fa1a34ff82 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Dogray Type Foundry" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/dogray-type.mp4?v=5cbdc72d7e" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Dogray Type Foundry</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Webflow
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://fortfoundry.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/fort-foundry.png?v=02e61f30d2" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/fort-foundry.png?v=02e61f30d2 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/fort-foundry.png?v=02e61f30d2 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/fort-foundry.png?v=02e61f30d2 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/fort-foundry.png?v=02e61f30d2 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Fort Foundry" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/fort-foundry.mp4?v=44726822f4" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Fort Foundry</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Custom
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://www.haltypefaces.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/hal-typefaces.png?v=0b603628c3" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/hal-typefaces.png?v=0b603628c3 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/hal-typefaces.png?v=0b603628c3 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/hal-typefaces.png?v=0b603628c3 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/hal-typefaces.png?v=0b603628c3 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="HAL Typefaces" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/hal-typefaces.mp4?v=7a9ed5005b" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">HAL Typefaces</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      WordPress
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://letterror.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/letterror.png?v=b60994a310" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/letterror.png?v=b60994a310 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/letterror.png?v=b60994a310 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/letterror.png?v=b60994a310 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/letterror.png?v=b60994a310 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="LettError" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/letterror.mp4?v=0e8084e259" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">LettError</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Custom
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://mass-driver.com" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/mass-driver.png?v=8deb0fd3cd" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/mass-driver.png?v=8deb0fd3cd 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/mass-driver.png?v=8deb0fd3cd 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/mass-driver.png?v=8deb0fd3cd 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/mass-driver.png?v=8deb0fd3cd 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Mass-Driver" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/mass-driver.mp4?v=b162d7492b" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Mass-Driver</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Custom
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://metis-foundry.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/metis.png?v=5999d8523a" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/metis.png?v=5999d8523a 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/metis.png?v=5999d8523a 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/metis.png?v=5999d8523a 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/metis.png?v=5999d8523a 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Metis" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/metis.mp4?v=0a4f3ef320" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Metis</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      WordPress
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://ops-type.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/ops-type.png?v=b83fffda51" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/ops-type.png?v=b83fffda51 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/ops-type.png?v=b83fffda51 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/ops-type.png?v=b83fffda51 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/ops-type.png?v=b83fffda51 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="OPS Type" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/ops-type.mp4?v=54579e407c" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">OPS Type</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Custom
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://www.regularlines.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/regular-lines.png?v=01a2b507d9" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/regular-lines.png?v=01a2b507d9 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/regular-lines.png?v=01a2b507d9 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/regular-lines.png?v=01a2b507d9 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/regular-lines.png?v=01a2b507d9 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Regular Lines Type Foundry" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/regular-lines.mp4?v=b3bc9f32b8" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Regular Lines Type Foundry</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      WordPress
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://www.rsztype.com" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/resistenza-type.png?v=f40f50282e" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/resistenza-type.png?v=f40f50282e 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/resistenza-type.png?v=f40f50282e 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/resistenza-type.png?v=f40f50282e 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/resistenza-type.png?v=f40f50282e 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Resistenza Type" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/resistenza-type.mp4?v=ef55757938" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Resistenza Type</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Custom
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://saschabente.com/" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/sascha-bente.png?v=4d063d5323" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/sascha-bente.png?v=4d063d5323 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/sascha-bente.png?v=4d063d5323 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/sascha-bente.png?v=4d063d5323 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/sascha-bente.png?v=4d063d5323 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Sascha Bente Typefaces" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/sascha-bente.mp4?v=086438da30" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Sascha Bente Typefaces</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      WordPress
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://typokompanii.com" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/tupokompanii.png?v=461991c3b6" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/tupokompanii.png?v=461991c3b6 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/tupokompanii.png?v=461991c3b6 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/tupokompanii.png?v=461991c3b6 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/tupokompanii.png?v=461991c3b6 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="Tüpokompanii" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/tupokompanii.mp4?v=fea46b10ea" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">Tüpokompanii</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Next.js
+    </span>
+    
+  </div>
+  
+</a>
+  </div><div style="display:none">
+    <a href="https://weekendtype.xyz/velo" target="_blank" rel="noopener" draggable="false" class="!text-black block group select-none" onmouseenter="this.querySelector('video')?.play()" onmouseleave="(()=>{const v=this.querySelector('video');if(v){v.pause();v.currentTime=0;}})()">
+  <div class="relative w-full">
+  <img src="https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/weekendtype.png?v=146430fb07" srcset="https://img.fontdue.com/cdn-cgi/image/width=480,quality=80,format=auto/https://www.fontdue.com/images/examples/weekendtype.png?v=146430fb07 480w, https://img.fontdue.com/cdn-cgi/image/width=768,quality=80,format=auto/https://www.fontdue.com/images/examples/weekendtype.png?v=146430fb07 768w, https://img.fontdue.com/cdn-cgi/image/width=1024,quality=80,format=auto/https://www.fontdue.com/images/examples/weekendtype.png?v=146430fb07 1024w, https://img.fontdue.com/cdn-cgi/image/width=1440,quality=80,format=auto/https://www.fontdue.com/images/examples/weekendtype.png?v=146430fb07 1440w" sizes="(min-width: 640px) 50vw, 100vw" width="1440" height="810" alt="WeekendType" loading="lazy" draggable="false" class="block w-full h-auto object-top align-top group-hover:opacity-90 transition-opacity">
+  <video src="/videos/examples/weekendtype.mp4?v=44bafd1cd2" muted playsinline loop preload="metadata" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 group-hover:opacity-100 transition-opacity duration-200"></video>
+  
+</div>
+  <div class="pt-3 flex items-baseline gap-2.5 min-w-0">
+    <span class="font-medium truncate">WeekendType</span>
+    <span class="font-mono text-[11px] text-black/30 tabular-nums tracking-[0.02em] uppercase shrink-0">
+      Cargo
+    </span>
+    
+  </div>
+  
+</a>
+  </div>
+  <script>
+  (function () {
+    var grid = document.getElementById("examples-grid");
+    if (!grid) return;
+    var items = Array.prototype.slice.call(grid.children).filter(function (el) {
+      return el.tagName !== 'SCRIPT';
+    });
+    for (var i = items.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = items[i]; items[i] = items[j]; items[j] = tmp;
+    }
+    items.slice(0, 4).forEach(function (el) { el.style.display = ''; });
+  })();
+</script>
+
+</div>
+
+    </div>
+  </div>
+</section>
+<section id="pricing" class="px-[1lh] pb-20 scroll-mt-4">
+  <div class="pt-3.5 font-mono text-xs uppercase tracking-[0.06em] tabular-nums text-black/55 border-t border-black/20">
+  Pricing
+</div>
+  <div class="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+    <div class="md:col-span-5 text-sm [&_p]:m-0 [&_p:not(:first-child)]:mt-2.5 [&_p]:leading-[1.55] [&_p]:max-w-[420px] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>a:not(:first-child)]:mt-5">
+      
+<p>Every foundry pays the same: a monthly fee plus a percentage of each sale. This model keeps Fontdue independent and sustainable, and funds new features and daily email support.</p>
+
+    </div>
+    <div class="md:col-span-7 ">
+      
+<div>
+  <div class="[container-type:inline-size]">
+    <div class="flex flex-wrap items-baseline gap-x-6 gap-y-2">
+      <div class="flex flex-col items-center gap-1 lg:flex-row lg:items-baseline lg:gap-2">
+        <div class="text-[clamp(44px,18cqw,72px)] lg:text-[clamp(60px,13cqw,88px)] leading-[0.9] tabular-nums">$49</div>
+        <div class="font-mono text-xs text-black/55 uppercase tracking-[0.04em]">
+          per month
+        </div>
+      </div>
+      <div class="flex items-baseline gap-[0.25em] text-[clamp(44px,18cqw,72px)] lg:text-[clamp(60px,13cqw,88px)] leading-[0.9]">
+        <span class="tabular-nums">+</span>
+        <div class="flex flex-col items-center gap-1 lg:flex-row lg:items-baseline lg:gap-2">
+          <span class="tabular-nums">5%</span>
+          <span class="font-mono text-xs text-black/55 uppercase tracking-[0.04em] leading-normal">
+            per sale
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-6 pt-3.5 border-t border-black/15 font-mono text-[11px] text-black/55 uppercase tracking-[0.04em] tabular-nums">
+    Additional Stripe processing fees apply
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+<section class="px-[1lh] pt-6 pb-20">
+  <div class="pt-3.5 font-mono text-xs uppercase tracking-[0.06em] tabular-nums text-black/55 border-t border-black/20">
+  Mission
+</div>
+  <div class="mt-10 mx-auto max-w-[920px] text-center text-[clamp(18px,2.4vw,28px)] leading-[1.35] text-balance [&_p]:m-0 [&_a]:underline [&_a:hover]:opacity-60">
+    
+<p>Fontdue is built for the type industry, from within it. Our mission is to enable you to sell fonts independently. We are ourselves fully independent and the pricing model keeps us sustainable in the long run.</p>
+
+  </div>
+  
+  
+</section>
+<section class="px-[1lh] pb-20 scroll-mt-4">
+  <div class="pt-3.5 font-mono text-xs uppercase tracking-[0.06em] tabular-nums text-black/55 border-t border-black/20">
+  Common questions
+</div>
+  <div class="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+    <div class="md:col-span-5 text-sm [&_p]:m-0 [&_p:not(:first-child)]:mt-2.5 [&_p]:leading-[1.55] [&_p]:max-w-[420px] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>a:not(:first-child)]:mt-5">
+      
+
+    </div>
+    <div class="md:col-span-7 ">
+      
+<div>
+  <div class="py-4 ">
+    <div class="font-medium">Who is behind Fontdue?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>Fontdue was created by Tom Conroy, now with help from a small team of freelancers.</p>
+
+    </div>
+  </div><div class="py-4 border-t border-black/15">
+    <div class="font-medium">Will you ever sell Fontdue?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>No, we are pledging to remain completely independent.</p>
+
+    </div>
+  </div><div class="py-4 border-t border-black/15">
+    <div class="font-medium">What if they offer you millions of dollars?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>Still no. We love working on Fontdue!</p>
+
+    </div>
+  </div><div class="py-4 border-t border-black/15">
+    <div class="font-medium">Can I extend my trial period?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>Yes, you can extend your trial as many times as you need until you launch. Just send us a request by email.</p>
+
+    </div>
+  </div><div class="py-4 border-t border-black/15">
+    <div class="font-medium">Will the pricing change? Is the 5% negotiable?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>No, we have kept consistent pricing since we launched and will not adjust it in the future. The fee is not negotiable, but it is capped at $10,000 USD per calendar year.</p>
+
+    </div>
+  </div><div class="py-4 border-t border-black/15">
+    <div class="font-medium">Can I import my orders from my existing system?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>Yes, please reach out and we can facilitate migrating your foundry to Fontdue.</p>
+
+    </div>
+  </div><div class="py-4 border-t border-black/15">
+    <div class="font-medium">How often do you add new features?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>We work as a small team full time on Fontdue and add features and improvements continuously.</p>
+
+    </div>
+  </div><div class="py-4 border-t border-black/15">
+    <div class="font-medium">Can I request a feature?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>Yes, many features have been sponsored by other foundries and built into the system. <a href="/services">Find out how to commission a feature</a>.</p>
+
+    </div>
+  </div><div class="py-4 border-t border-black/15">
+    <div class="font-medium">Can you build my foundry site?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>Yes! We offer foundry website development services. Get in touch with us to discuss your project.</p>
+
+    </div>
+  </div><div class="py-4 border-t border-black/15">
+    <div class="font-medium">Do you support non-Latin typefaces?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>Fontdue foundries are successfully selling Greek, Cyrillic and Arabic script fonts, and others are likely to work as well – get in touch with us for more script support.</p>
+
+    </div>
+  </div><div class="py-4 border-t border-black/15">
+    <div class="font-medium">How can I cancel my subscription?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>You can cancel any time from your billing settings. And if you’re only cancelling because your trial is running out before you’ve launched, email us instead – we’re happy to extend it for as long as you need.</p>
+
+    </div>
+  </div><div class="py-4 border-t border-black/15">
+    <div class="font-medium">How can I contact you?</div>
+    <div class="mt-1.5 text-black/65 leading-[1.55] [&_a]:!text-black [&_a]:underline [&_a:hover]:opacity-60 [&>p:first-child]:m-0">
+      
+<p>Email us any time at <a href="/cdn-cgi/l/email-protection#7b080e0b0b14090f3b1d14150f1f0e1e55181416"><span class="__cf_email__" data-cfemail="ff8c8a8f8f908d8bbf9990918b9b8a9ad19c9092">[email&#160;protected]</span></a> for additional information or support.</p>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+<section class="mx-[calc(50%-50vw)] bg-black text-white px-[1lh] py-12 md:py-32 relative overflow-hidden">
+  <div class="relative mx-auto max-w-[920px] text-center">
+    <div class="text-[clamp(18px,2.4vw,28px)] leading-[1.35] text-balance [&_p]:m-0">
+      
+Start your foundry today.
+
+    </div>
+    <div class="mt-10 flex justify-center">
+      <a href="/sign-up" class="!text-black inline-block px-3.5 py-[7px] bg-lime hover:opacity-85 transition-opacity">
+        Try now
+      </a>
+    </div>
+  </div>
+</section>
+
+    <div id="connection-status" class="hidden rounded-md bg-red-50 p-4 fixed top-1 right-1 w-96 fade-in-scale z-50" js-show="[[&quot;show&quot;,{&quot;display&quot;:&quot;inline-block&quot;,&quot;time&quot;:100,&quot;to&quot;:&quot;#connection-status&quot;,&quot;transition&quot;:[[&quot;ease-out&quot;,&quot;duration-100&quot;],[&quot;opacity-0&quot;,&quot;translate-y-4&quot;,&quot;sm:translate-y-0&quot;,&quot;sm:scale-95&quot;],[&quot;opacity-100&quot;,&quot;translate-y-0&quot;,&quot;sm:scale-100&quot;]]}]]" js-hide="[[&quot;hide&quot;,{&quot;time&quot;:100,&quot;to&quot;:&quot;#connection-status&quot;,&quot;transition&quot;:[[&quot;transition&quot;,&quot;ease-in&quot;,&quot;duration-100&quot;],[&quot;transform&quot;,&quot;opacity-100&quot;,&quot;scale-100&quot;],[&quot;transform&quot;,&quot;opacity-0&quot;,&quot;scale-95&quot;]]}]]">
+  <div class="flex">
+    <div class="flex-shrink-0">
+      <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-red-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+        </circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+        </path>
+      </svg>
+    </div>
+    <div class="ml-3">
+      <p class="text-sm text-red-800" role="alert">
+        
+      Re-establishing connection...
+    
+      </p>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="bg-lime relative overflow-hidden text-black">
+  <div class="w-full max-w-site mx-auto px-[1lh] pt-10 [container-type:inline-size]">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-sm relative z-10">
+      <div>
+        <div class="mb-2 text-xs uppercase tracking-[0.04em] opacity-50">Product</div>
+        <a href="https://www.fontdue.com/showcase" class="!text-black block py-[3px] hover:opacity-60">Showcase</a>
+        <a href="https://www.fontdue.com/services" class="!text-black block py-[3px] hover:opacity-60">Services</a>
+        
+      </div>
+      <div>
+        <div class="mb-2 text-xs uppercase tracking-[0.04em] opacity-50">Documentation</div>
+        <a href="https://www.fontdue.com/docs/platform" class="!text-black block py-[3px] hover:opacity-60">Platform guide</a>
+        <a href="https://www.fontdue.com/docs/website" class="!text-black block py-[3px] hover:opacity-60">Website guide</a>
+        <a href="https://www.fontdue.com/docs/develop" class="!text-black block py-[3px] hover:opacity-60">Developer guide</a>
+        <a href="https://www.fontdue.com/docs/reference" class="!text-black block py-[3px] hover:opacity-60">Reference</a>
+        <a href="https://www.fontdue.com/docs/changelog/whats-new" class="!text-black block py-[3px] hover:opacity-60">Changelog</a>
+      </div>
+      <div>
+        <div class="mb-2 text-xs uppercase tracking-[0.04em] opacity-50">Company</div>
+        <a href="https://www.fontdue.com/about" class="!text-black block py-[3px] hover:opacity-60">About</a>
+        <a href="https://www.fontdue.com/blog" class="!text-black block py-[3px] hover:opacity-60">Blog</a>
+        <a href="/cdn-cgi/l/email-protection#aedddbdedec1dcdaeec8c1c0dacadbcb80cdc1c3" class="!text-black block py-[3px] hover:opacity-60">Contact</a>
+      </div>
+      <div>
+        <div class="mb-2 text-xs uppercase tracking-[0.04em] opacity-50">Legal</div>
+        <a href="https://www.fontdue.com/terms-of-service" class="!text-black block py-[3px] hover:opacity-60">Terms</a>
+        <a href="https://www.fontdue.com/privacy-policy" class="!text-black block py-[3px] hover:opacity-60">Privacy</a>
+        <a href="https://www.fontdue.com/customer-data" class="!text-black block py-[3px] hover:opacity-60">Customer data</a>
+      </div>
+    </div>
+    <div class="mt-10 text-sm text-black/50 leading-[1.4] relative z-10">
+      <p>© 2026 Fontdue Inc.</p>
+      <p>
+        Fontdue® is a registered trademark of Fontdue Inc. in the United States and the European Union.
+      </p>
+    </div>
+    <div class="font-bold whitespace-nowrap select-none pointer-events-none text-[clamp(64px,26cqw,280px)] leading-[0.78] tracking-[-0.04em] mt-16 lg:mt-[0.143em] -mb-[0.154em]" aria-hidden="true">
+      Fontdue
+    </div>
+  </div>
+</footer>
+</div></div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

@@ -1,0 +1,249 @@
+@import "tailwindcss";
+@import "./melon.css";
+
+:root {
+  --font-geist-mono: "Geist Mono", "Geist Mono Fallback", "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Base html & body resets ensuring Melon Studio layout baseline */
+html {
+  background-color: var(--black, #021024);
+  color: var(--ink, #ffffff);
+  font-family: var(--font, "early-sans-variable", ui-sans-serif, system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: auto; /* Let Lenis handle smooth scrolling */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--black, #021024);
+}
+
+/* Ensure smooth tone transitions */
+[data-tone="white"] {
+  --f-bg: var(--white);
+  --f-fg: var(--black);
+  --f-fg2: oklch(from var(--black) l c h / .55);
+  --f-rule: oklch(from var(--black) l c h / .16);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+[data-tone="black"] {
+  --f-bg: var(--black);
+  --f-fg: var(--ink);
+  --f-fg2: var(--muted);
+  --f-rule: oklch(from var(--ink) l c h / .16);
+  background-color: var(--black);
+  color: var(--ink);
+}
+
+/* Universal text roll (.f-roll) animations */
+.f-roll {
+  display: block;
+  position: relative;
+  overflow: clip;
+  height: 1.35em;
+  line-height: 1.35;
+}
+.f-roll__in {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+.f-roll__t {
+  display: block;
+  height: 100%;
+  line-height: 1.35;
+  transition: transform 0.35s cubic-bezier(0.18, 0.66, 0.18, 1);
+  will-change: transform;
+}
+.f-roll__t--b {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+/* Authentic Melon Studio .f-showall Button Styling */
+.f-showall {
+  font: 500 13px / 1.35 var(--font-mono, monospace);
+  color: var(--f-fg, currentColor);
+  white-space: nowrap;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0 5px;
+  display: inline-flex;
+  position: relative;
+  text-decoration: none;
+}
+.f-showall:before, .f-showall:after {
+  content: "";
+  background: currentColor;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.f-showall:before {
+  opacity: 0.3;
+}
+.f-showall:after {
+  transform-origin: 0;
+  transition: transform 0.45s cubic-bezier(0.18, 0.66, 0.18, 1);
+  transform: scaleX(0);
+}
+.f-showall:hover:after,
+.f-showall.is-hover:after {
+  transform: scaleX(1) !important;
+}
+
+/* Trigger roll on hover or is-hover class */
+.f-showall:hover .f-roll__t,
+.f-showall.is-hover .f-roll__t,
+a:hover > .f-roll .f-roll__t,
+button:hover > .f-roll .f-roll__t,
+.f-roll:hover .f-roll__t {
+  transform: translateY(-100%) !important;
+}
+
+/* Sliding arrows animation */
+.f-showall__arrs {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  display: block;
+  position: relative;
+  overflow: clip;
+}
+.f-showall__arr {
+  position: absolute;
+  inset: 0;
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 1.4px;
+  transition: transform 0.35s cubic-bezier(0.18, 0.66, 0.18, 1);
+  will-change: transform;
+}
+.f-showall__arr--b {
+  transform: translate(-150%, 0);
+}
+
+.f-showall:hover .f-showall__arr,
+.f-showall.is-hover .f-showall__arr {
+  transform: translate(150%, 0) !important;
+}
+.f-showall:hover .f-showall__arr--b,
+.f-showall.is-hover .f-showall__arr--b {
+  transform: translate(0, 0) !important;
+}
+
+sup.count, sub.count {
+  letter-spacing: 0.04em;
+  vertical-align: 0;
+  opacity: 0.6;
+  margin-left: 4px;
+  font-size: 10px;
+  position: relative;
+  top: -0.65em;
+}
+
+/* Hairline underline hover animation (.f-u) */
+.f-u {
+  position: relative;
+}
+.f-u:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: var(--u-y, -2px);
+  height: var(--u-h, 1px);
+  background: currentColor;
+  transform-origin: 100%;
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.18, 0.83, 0.27, 1);
+  pointer-events: none;
+}
+.f-u:hover:after,
+.f-u.is-u:after {
+  transform-origin: 0;
+  transform: scaleX(1);
+}
+
+/* Active equalizer animation when live */
+.f-now.is-live .f-eq i {
+  animation: f-eq 0.9s ease-in-out infinite alternate;
+}
+.f-now.is-live .f-eq i:nth-child(2) {
+  animation-duration: 0.62s;
+}
+.f-now.is-live .f-eq i:nth-child(3) {
+  animation-duration: 1.1s;
+}
+.f-now.is-live .f-eq i:nth-child(4) {
+  animation-duration: 0.74s;
+}
+
+@keyframes f-eq {
+  0% { transform: scaleY(0.2); }
+  50% { transform: scaleY(1); }
+  100% { transform: scaleY(0.45); }
+}
+
+/* Wordmark kinetic letters */
+.f-wm__l {
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* 3D project card hover */
+.proj__card {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.18, 0.66, 0.18, 1), box-shadow 0.4s ease;
+}
+
+/* Article peek active transition */
+.hb1-peek__l {
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.4s cubic-bezier(0.18, 0.66, 0.18, 1), transform 0.4s cubic-bezier(0.18, 0.66, 0.18, 1);
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+.hb1-peek__l.is-on {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Directional fill for insight items */
+.hb-fill {
+  position: absolute;
+  inset: 0;
+  background: oklch(from var(--black) l c h / .03);
+  pointer-events: none;
+  transition: clip-path 0.35s cubic-bezier(0.18, 0.66, 0.18, 1), opacity 0.35s ease;
+  z-index: 0;
+}
+
+/* Pinned caption floating behavior */
+@media (min-width: 810px) {
+  .proj__cap.is-pinned {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    pointer-events: none;
+  }
+}

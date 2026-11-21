@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020408"/>
+      <stop offset="50%" stop-color="#050a14"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <radialGradient id="glow4" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg4)"/>
+  <rect width="1200" height="1500" fill="url(#glow4)"/>
+
+  <!-- Framing -->
+  <line x1="80" y1="80" x2="1120" y2="80" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+  <line x1="80" y1="260" x2="1120" y2="260" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+  <line x1="80" y1="1380" x2="1120" y2="1380" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+  <line x1="80" y1="80" x2="80" y2="1380" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+  <line x1="1120" y1="80" x2="1120" y2="1380" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Top Header with Official X Vector Logo -->
+  <g transform="translate(120, 140)">
+    <g transform="scale(3)">
+      <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" fill="#FFFFFF"/>
+    </g>
+    <text x="100" y="46" fill="#888888" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="600" letter-spacing="3">AI ARCHITECTURE // CURATED ESSAY</text>
+    <text x="960" y="46" text-anchor="end" fill="#FFFFFF" font-family="'Geist Mono', monospace" font-size="16">x.com/karpathy</text>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(120, 480)">
+    <text x="0" y="0" fill="#888888" font-family="'Geist Mono', monospace" font-size="18" letter-spacing="5" font-weight="500">SOFTWARE 3.0</text>
+    <text x="0" y="110" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="104" font-weight="800" letter-spacing="-3">Autonomous</text>
+    <text x="0" y="215" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="104" font-weight="800" letter-spacing="-3">Software</text>
+    <text x="0" y="315" fill="#CCCCCC" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="44" font-weight="300" letter-spacing="-1">Agents as Runtime &amp; Self-Optimizing Loops</text>
+  </g>
+
+  <!-- Thought Piece Callout Card -->
+  <g transform="translate(120, 920)">
+    <rect x="0" y="0" width="960" height="280" rx="16" fill="#080c14" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
+    
+    <text x="40" y="50" fill="#888888" font-family="'Geist Mono', monospace" font-size="14" letter-spacing="2">04 // PARADIGM SHIFT</text>
+    <text x="40" y="90" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="500">“Code is becoming the artifact; intent is the source code.”</text>
+    <line x1="40" y1="120" x2="920" y2="120" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+
+    <g transform="translate(40, 160)">
+      <text x="0" y="0" fill="#888888" font-family="'Geist Mono', monospace" font-size="13">PARADIGM 1.0</text>
+      <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Explicit Code</text>
+      <text x="0" y="60" fill="#AAAAAA" font-family="'Geist Mono', monospace" font-size="14">C / C++ / Python</text>
+    </g>
+
+    <g transform="translate(360, 160)">
+      <text x="0" y="0" fill="#888888" font-family="'Geist Mono', monospace" font-size="13">PARADIGM 2.0</text>
+      <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Weights &amp; Tensors</text>
+      <text x="0" y="60" fill="#AAAAAA" font-family="'Geist Mono', monospace" font-size="14">PyTorch / Neural Nets</text>
+    </g>
+
+    <g transform="translate(680, 160)">
+      <text x="0" y="0" fill="#888888" font-family="'Geist Mono', monospace" font-size="13">PARADIGM 3.0</text>
+      <text x="0" y="32" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700">Autonomous Agents</text>
+      <text x="0" y="60" fill="#AAAAAA" font-family="'Geist Mono', monospace" font-size="14">Self-Correcting Loops</text>
+    </g>
+  </g>
+
+  <!-- Bottom Colophon -->
+  <g transform="translate(120, 1340)">
+    <text x="0" y="0" fill="#CCCCCC" font-family="'Geist Mono', monospace" font-size="15" letter-spacing="1">HITEN PANDA // AGENTIC SYSTEMS ANALYSIS</text>
+    <text x="960" y="0" text-anchor="end" fill="#888888" font-family="'Geist Mono', monospace" font-size="15" letter-spacing="1">OFFICIAL X VERIFIED POST</text>
+  </g>
+</svg>
